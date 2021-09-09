@@ -1,0 +1,426 @@
+ 
+
+Prüfungsteilnehmer Prüfungstermin Einzelprüfungsnummer
+
+ 
+
+Kennzahl:
+
+Herbst
+Kennwort: 66 1 1 3
+2002
+
+Arbeitsplatz-Nr.:
+
+ 
+
+Erste Staatsprüfung für ein Lehramt an öffentlichen Schulen
+
+- Prüfungsaufgaben -
+
+Fach: Informatik (vertieft studiert)
+Einzelprüfung: Rechnerarchitektur,Datenb.,Betriebssys.
+Anzahl der gestellten Themen (Aufgaben): 2
+
+Anzahl der Druckseiten dieser Vorlage: 9
+
+Bitte wenden!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 2
+
+ 
+
+Thema Nr. 1
+
+Sämtliche Teilaufgaben sind zu bearbeiten!
+
+l. Aufgabe (E/R Diagramm, Integritätsbedingungen, Schema-Entwurf, SQL-Anfragen)
+
+Es soll eine Datenbank für ein Konzert-Auskunftssystem für München entworfen werden. Das SySs-
+tem soll vergangene und zukünftige Konzertveranstaltungen enthalten können.
+
+Entity Mengen:
+
+Dirigenten mit den Attributen NAME, VORNAME, GEB-DATUM, VITA
+
+Konzerte mit den Attributen BEZEICHNUNG und einem künstlichen Schlüssel
+KONZERT# vom Typ integer
+
+Komponisten mit denselben Attributen wie Dirigenten -
+
+Musikstücke mit dem Attribut TITEL und einem künstlichen Schlüssel TITEL# vom
+Typ integer
+
+Konzertsäle mit den Attributen SAALNAME, ADRESSE, TELEFON-NR
+
+Relationships:
+
+dirigiert | ein Dirigent dirigiert ein Konzert.
+
+komponierte ein Komponist komponierte ein Musikstück.
+
+wird gespielt ein Musikstück wird gespielt in einem Konzert.
+
+findet statt ein Konzert findet in einem Konzertsaal statt an einem Tag und Uhrzeit
+
+1.1 Integritätsbedingungen
+
+Neben den offensichtlichen Integritätsbedingungen sollen folgende gelten:
+Il: ein Konzert wird nur von einem Dirigenten dirigiert.
+I2: ein Konzert kann mehrmals, auch in verschiedenen Konzertsälen stattfinden. -
+I3: TITEL#, KONZERT#, SAALNAME sind eindeutig für Musikstücke, Konzerte
+und Konzertsäle, sowie die Kombination NAME, VORNAME für Dirigenten und Kompo-
+nisten.
+
+1.2 E/R Diagramm
+
+1. Entwerfen Sie für die Datenbank ein E/R Diagramm entsprechend den obigen Spezifikationen
+und Integritätsbedingungen!
+
+. Geben Sie die Kardinalitäten für die Relationships an!
+
+. Geben Sie für jede Entität die Mengen der Schlüsselkandidaten an!
+
+. Geben Sie die Attribute der Relationsships an!
+
+. Ergänzen Sie die Relationship „wird gespielt" so, dass die Reihenfolge der Musikstücke im Kon-
+zert ersichtlich ist!
+
+Nr wm
+
+Fortsetzung nächste Seite!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 3
+
+ 
+
+1.3 Relationales Schema
+
+Geben Sie zu dem entwickelten E/R Diagramm ein relationales Schema an und kennzeichnen Sie
+durch Unterstreichen die gewählten Primärschlüssel!
+
+1.4 SQL-Anfragen
+Formulieren Sie für das relationale Schema die folgenden Anfragen bzw. Operationen in SQL:
+
+1. Welche Dirigenten (NAME, VORNAME, GEB-DATUM) haben je in München ein Konzert di-
+rigiert?
+
+2. Welche Konzerte (KONZERT#, BEZEICHNUNG) dirigiert Lorin Mazel?
+
+3. Finden Sie NAME, VORNAME und VITA des Dirigenten von „Neujahrskonzert 2002" im
+„Herkulessaal" am 1.1.2002 um 20 Uhr!
+
+4. In welchen Konzerten (KONZERT#, BEZEICHNUNG) dirigiert Claudio Abbado ein Stück von
+Claude Debussy?
+
+5. In welcher Konzertveranstaltung wird heute „Rhapsody in Blue" gespielt, wo und zu welcher
+Zeit (KONZERT#, KONZERTSAAL, UHRZEIT)?
+
+6. Führen Sie folgende Programmänderung aus: im Konzert mit der KONZERT# = 123 wird statt
+dem Stück STÜCK# = 234 das Stück STÜCK# = 345 gespielt!
+
+Fortsetzung nächste Seite! .
+ 
+
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 4
+
+ 
+
+2. Aufgabe (Seitenersetzungsstrategien)
+1. Gegeben sei ein Prozess mit einem virtuellen Speicher von fünf Seiten, für dessen Realisierung drei
+Seitenrahmen (Frame = {K1,K2,K3}) zur Verfügung stehen. Geben Sie für die Strategien LRU (Le-
+
+ast Recently Used) und FIFO (First in First out) die Entwicklung der Kachelseitentabelle für die
+Zugriffsreferenzkette & = 123412512345 an!
+
+2. Die Seitenrahmen seien zu Beginn leer. Markieren Sie jedes Auftreten von Seitenfehlern und notie-
+ren Sıe jeweils dıe Gesamtzahl der Seitenfehler!
+
+3. Geben Sıe für die Strategie FIFO (First in First out) auch die Belegung der Kachelseitentabelle für
+vier Seitenrahmen (Frame = {K,,K2,K3,K4}) und obiger Zugriffsreferenzkette & an. Beschreiben
+Sıe das auftretende Phänomen!
+
+3. Aufgabe (Dateisystem)
+
+Beschreiben und erklären Sıe das Unix Dateisystem! Gehen Sie insbesondere auf die Verwaltung der
+belegten und freien Datenblöcke ein!
+
+4. Aufgabe (Prozessrealisierung)
+1. Was ist ein Prozess?
+
+2. Prozesse können im Verlauf ihrer Lebenszeit unterschiedliche Zustände annehmen. Zeichnen Sie
+einen allgemeinen Prozesszustandsgraphen und markieren Sie die Übergänge, die vom Dispatcher
+realisiert werden!
+
+3. Welche Hilfsmittel und Datenstrukturen benötigt man für dıe Realisierung und Verwaltung von
+Prozessen?
+
+Fortsetzung nächste Seite!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 5
+
+ 
+
+5. Aufgabe (Rechnernetze)
+5.1 ISO/OSI Referenzmodell
+
+Beschreiben Sie den Aufbau des ISO/OSI Referenzmodells und skizzieren Sie die Funktionalität der
+einzelnen Schichten!
+
+5.2 Ethernet
+
+Die PC's der Mitglieder einer Abteilung sind über ein lokales Netz miteinander verbunden. Als lo-
+kales Netz wurde ein einfaches Ethernet gemäß einer Bustopologie installiert (10 Mbit/sec).
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1. Beschreiben Sie kurz den Ablauf, falls nur PC-1 über das Ethernet eine Nachricht an PC-2 über-
+trägt!
+
+2. Diskutieren Sie den Fall. dass gleichzeitig mit PC-1 auch PC-3 zu senden beginnt, um eine Nach-
+richt an PC-4 zu schicken!
+5.3 Routing Verfahren
+
+Beschreiben Sıe das Distance-Vector-Routing Verfahren!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 6
+
+ 
+
+Thema Nr. 2
+Sämtliche Teilaufgaben sind zu bearbeiten!
+1. Datenbanksysteme: Relationale Anfragen
+
+In einer Datenbank befinden sich Relationen mit den folgenden Relationenschemata (Schlüsselattri-
+bute sind jeweils kursiv geschrieben):
+
+ 
+
+ 
+
+Teilnehmer | MatrNr | Name | _ Vorname | Fachsemester | Geburtstag |
+| 777 | | |
+Ergebnisse | AufgNr | MatrNr | Punkte |
+| | |
+Aufgaben | AufgNr | Abgabedatum | MaxPunkte |
+
+ 
+
+| |
+
+l. Geben Sie für die folgenden verbal formulierten Anfragen jeweils eine Anfrageformulierung in
+der Datenbanksprache SQL an!
+Darüber hinaus geben Sie jeweils eine Anfrageformulierung in einem weiteren Anfrageformalis-
+mus an (zur Auswahl stehen dabei Relationenalgebra, Tupelkalkül und QBE (Query by
+Example))!
+
+a) Geben Sie alle Teilnehmer aus, die mindestens in einer Aufgabe die maximal erreichbare
+Punktzahl erreicht haben (wobei ein Teilnehmer nicht mehrfach ausgegeben werden soll)!
+
+b) Geben Sie alle Teilnehmer aus, die mindestens in zwei (verschiedenen) Aufgaben die maxi-
+mal erreichbare Punktzahl erreicht haben!
+
+c) Geben Sie für den Teilnehmer „Hans Wurst" eine Liste aller bearbeiteten Aufgaben mit der
+jeweils von ihm erreichten Punktzahl sowie der maximal erreichbaren Punktzahl für diese
+Aufgabe aus!
+
+2. Formulieren Sie die folgenden Anfragen in SQL:
+
+a) Geben Sie eine Anfrage an, die eine Ergebnisliste erstellt, in der für jeden Teilnehmer die
+Summe der insgesamt von diesem Teilnehmer erreichten Punkte aufgeführt sind!
+
+b) Berechnen Sie für jeden Teilnehmer die durchschnittlich erreichte Punktzahl, wobei nur die
+bearbeiteten Aufgaben für jeden Teilnehmer berücksichtigt werden sollen!
+
+c) Geben Sie Namen und Vornamen aller Teilnehmer aus, die nicht mehr als 10 Aufgaben be-
+arbeitet haben!
+
+Geben Sie für jede Fachsemesterzahl die Fachsemesterzahl zusammen mit der Anzahl der
+Teilnehmer aus diesem Fachsemester aus, die mindestens in einer Aufgabe die maximal er-
+reichbare Punktzahl erreicht haben!
+
+Fortsetzung nächste Seite!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 7
+
+ 
+
+2. Datenbanksysteme: Funktionale Abhängigkeiten, Normalisierung
+
+Gegeben sei ein Relationenschema R mit Attributen A, B, C, D. Für dieses Relationenschema
+seien die folgenden Mengen an funktionalen Abhängigkeiten (FDs) gegeben:
+
+a A—B, b) AB, c) AB-C,
+
+B-C, B-C B -D
+A-D C—D,
+| CA
+dd AB-C, e) AB-C,
+AC-D, A -D,
+AD-B CD-A
+
+1. Bestimmen Sie für das Relationschema R für jede der angegebenen Mengen an funktionalen
+Abhängigkeiten jeweils alle möglichen Schlüssel(-kandidaten)'
+
+D
+
+. Geben Sie für jede der Mengen an funktionalen Abhängigkeiten an, ob das Relationenschema R
+in 2. Normalform (2NF) und ob es in 3. Normalform (3NF) ist. Begründen Sie dies jeweils kurz!
+
+w
+
+. Für die Fälle, in denen R nicht in 2NF bzw. 3NF ist, geben Sie bitte neue Relationenschemata in
+3NF an! Erläutern Sie die dazu durchzuführenden Schritte jeweils kurz!
+
+B
+
+. Untersuchen Sie für die Fälle d) und e), ob das Relationenschema in Boyce-Codd-Normalform
+(BCNEF) ist! Geben Sie jeweils eine kurze Begründung an!
+Wenn das Relationenschema nicht in BCNF ist, erläutern Sie, ob eine Zerlegung in eine seman-
+tisch äquivalente Menge an Relationenschemata in BCNF möglich ist.
+
+3. Rechnernetze: Schicht 1
+
+l. Aufeinem Kanal steht eine Bandbreite von 100MHz zur Verfügung. Welche Datenrate (in
+Bit/Sekunde) kann bei Verwendung 16-stufiger Kodierung erreicht werden?
+
+DD
+
+. Erklären Sie den Zusammenhang zwischen Bit/Sekunde und Baud bei der Manchestercodierung!
+
+3. Nennen Sıe die wesentlichen Störeinflüsse auf:
+
+a) elektrische Leiter
+b) optische Leiter
+c) Funkstrecken
+
+4. Auf welche Art der drei genannten Leiter lässt sich das Nyquist-Theorem anwenden? (kurze Be-
+gründung)
+
+Fortsetzung nächste Seite!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 8
+
+ 
+
+4. Rechnernetze: Schicht 2
+1. Unter welchen Umständen muss die Schicht 2a (MAC) eingeführt werden?
+
+2 Skizzieren Sie das Verhalten folgender Verfahren unter extrem hoher sowie unter extrem niedri-
+ger Last!
+
+a) Token-Ring-Verfahren
+b) CSMA/CD-Verfahren (Ethernet)
+
+3. Welches Verfahren ist unter den beiden Extremzuständen jeweils das geeignetere? (kurze Begrün-
+dung!)
+
+4. Erläutern Sie den Begriff „selbststabilisierend" im Zusammenhang mit Ethernet und Token-Ring-
+Verfahren!
+
+5. Erklären Sie, wie das Bitstuffing-Verfahren bei HDLC durchgeführt wird! Wieso ist dies erforder-
+lich?
+
+6. Führen Sıe dieses an der binären Folge 1011110101100000011111100 durch!
+
+5. Rechnerarchitektur: Von Neumann Rechner
+1. Von Neumann hat folgende Grundsätze für Rechner aufgestellt:
+
+a) Der Rechner besteht aus Speicher, Leit- und Rechenwerk, sowie Ein/Ausgabegeräten!
+
+b) Die Struktur des Rechners ist unabhängig vom zu bearbeitenden Problem.
+
+c) Programm und Werte stehen in demselben Speicher und können beide durch die Maschine ver-
+ändert werden.
+
+d) Der Speicher ist in Zellen gleicher Größe eingeteilt, die durch fortlaufende Nummern (Adres-
+sen) bezeichnet werden.
+
+e) Das Programm besteht aus einer Folge von Befehlen, die sequentielle Aufträge beschreiben
+und in der Aufzeichnungsreihenfolge auszuführen sind.
+
+Diskutieren Sie, inwieweit diese Aussagen auf heutige, herkömmliche PCs zutreffen und geben Sie
+Beispiele für die Abweichung von den Grundsätzen!
+
+2. Erläutern Sie die Vor- und Nachteile, die durch eine Vergrößerung der Wortbreite bei einem
+von-Neumann Rechner entstehen!
+
+Fortsetzung nächste Seite!
+Herbst 2002 Einzelprüfungsnummer: 66113 Seite: 9
+
+ 
+
+6. Rechnerarchitektur: Parallelrechner-Architektur
+1. Geben Sie die Klassifizierung nach Flynn mit je einem Beispiel an!
+2. Geben Sie die Formeln für den Speedup und die Effizienz bei Parallelrechnern an!
+
+3. Welche Vor- bzw. Nachteile bieten die Codeaufteilung bzw. die Datenaufteilung bei der Paralleli-
+sierung?
+
+7. Betriebssysteme: Prozesszustände
+
+l. Skizzieren Sie den Zustandsautomaten, der die 7 allgemein möglichen Zustände eines Prozesses
+sowie die möglichen Übergänge zwischen diesen Zuständen enthält!
+
+2. Welcher Zustandsübergang eines Prozesses wird beim Dispatching realisiert?
+3. Erläutern Sie kurz den Unterschied zwischen Scheduling und Dispatching (1-2 Sätze)!
+
+A. Was versteht man unter Swapping, und in welchen Fällen tritt es auf (1-2 Sätze)?
+
+8. Betriebssysteme: Speicherverwaltung
+
+In dieser Aufgabe sei für die Speicherverwaltung einfache Segmentierung vorgesehen. Für jedes
+
+Segment eines Prozesses muss ein Eintrag in der Segmenttabelle des Prozesses existieren. Adressen
+
+(logische und physische) haben eine Länge von 16 Bit, von denen 5 Bit für die Segmentnummer reser-
+
+viert sind.
+
+1. Welche Informationen über die Segmente müssen in der Segmenttabelle enthalten sein?
+
+2. Zeigen Sie (mit Hilfe einer Zeichnung) die Abbildung einer logischen auf eine physische Maschıi-
+nenadresse.
+
+3. Welche Art der Fragmentierung tritt bei der hier angenommenen einfachen Segmentierung auf? Be-
+schreiben Sie zusätzlich kurz (jeweils 1 Satz) die Ihnen bekannten Fragmentierungsarten!
+
+4. Was ist bei den oben angenommenen Werten der Maximalwert für die Sesmentgröße?
+
+5. Welche Überprüfungen kann man vornehmen, um festzustellen, ob es sich bei einer gegebenen logi-
+schen Adresse um eine gültige Adresse handelt?
+
+9, Betriebssysteme: Prozesskoordination
+
+1. Erklären Sie, wie ein allgemeiner Semaphor $ (Zählsemaphor) mit Hilfe von binären Semaphoren
+und gewöhnlichen Variablen realisiert werden kann!
+
+2. Nennen und erklären Sie (1-2 Sätze) die Vorteile, die die Verwendung von Monitoren gegenüber
+der Verwendung von Semaphoren bietet!
+
+3. Wieso löst das Konzept der Unterbrechungsvermeidung das Problem des wechselseitigen Aus-
+schlusses nur bei Einprozessorsystemen (1-2 Sätze)?
