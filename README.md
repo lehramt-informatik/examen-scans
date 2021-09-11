@@ -1,2 +1,2 @@
 # examen-scans
-Scanns der Staatsexamen
+Scans der Staatsexamen
