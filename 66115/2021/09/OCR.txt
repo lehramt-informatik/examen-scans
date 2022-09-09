@@ -1,0 +1,984 @@
+ 
+
+ 
+
+Prüfungsteilnehmer Prüfungstermin Einzelprüfungsnummer
+
+Kennzahl:
+
+ 
+
+Herbst
+Kennwort: ___ ——— eres 66115
+
+2021
+
+Arbeitsplatz-Nr.:
+
+ 
+
+Erste Staatsprüfung für ein Lehramt an öffentlichen Schulen
+
+— Prüfungsaufgaben —
+
+ 
+
+Fach: Informatik (vertieft studiert)
+Einzelprüfung: Theoretische Informatik, Algorithmen
+Anzahl der gestellten Themen (Aufgaben): 2
+
+Anzahl der Druckseiten dieser Vorlage: 18
+
+ 
+
+Bitte wenden!
+
+ 
+ 
+
+Herbst 2021 | Einzelprüfungsnummer: 66115 Seite: 2
+Thema Nr. 1
+(Aufgabengruppe)
+
+Es sind alle Aufgaben dieser Aufgabengruppe zu bearbeiten!
+
+Teilaufgabe I: Algorithmen
+
+ 
+
+Aufgabe 1 (Aufwandsanalyse) [20 PUNKTE|
+
+a) Gegeben seien die beiden Funktionen f und g, deren asymptotische Laufzeiten bereits be-
+stimmt wurden:
+
+e f(int n) mit Laufzeit f € O(log,n)
+e g(int n) mit Laufzeit g € O(n).
+Bestimmen Sie jeweils für die folgenden drei Programmfragmente die asymptotische Laufzeit
+
+in der 8-Notation. Begründen Sie Ihre Antwort.
+
+(i) for i = 1 to n do begin g(n); end
+(ii) i
+
+(ii) i
+
+1; while (i<n) do begin f(n); g(n); i = i#*2; end
+
+n; while (i>0) do begin f(n); i = i/2; end
+
+b) Nehmen Sie an, die Funktion foo(int n) habe eine Laufzeit von O(n). Welche asymptotische
+Laufzeit hat dann die Funktion bar in Abhängigkeit von n? Begründen Sie Ihre Antwort.
+
+1 procedure bar(int n) : integer
+2 begin
+
+3 integer i,j,k;
+
+4 for i :=1 ton do
+
+9 begin
+
+6 j ı=n;
+
+7 while (j >= 1) do
+
+8 begin
+
+9 for k := 1 ton do
+10 begin
+
+11 foo(n);
+
+12 end
+
+13 j := j/2;
+
+14 end
+
+15 end
+
+16 end
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 3
+
+c) Sortieren Sie die unten angegebenen Funktionen der O-Klassen O(a(n)), O(b(n)), O(e(n))
+und O(d{n)) bezüglich ihrer Teilmengenbeziehungen. Nutzen Sie ausschließlich die echte
+Teilmenge C sowie die Gleichheit = für die Beziehung zwischen den Mengen. Folgendes
+Beispiel illustriert diese Schreibweise für einige Funktionen fı bis fa (diese haben nichts mit
+den unten angegebenen Funktionen zu tun):
+
+O(fa(n)) C O(fa(m)) C O(fi(m)) = O(fa(n))
+Die Beziehungen müssen weder bewiesen noch begründet werden.
+
+e aln) = n? : log,(n)
+e b(n) = 2" +n*+ 42
+@ c(n) — gnt+4
+
+e d(n) =3- Vn
+
+d) Beweisen Sie die folgende Aussage formal durch Rückführung auf die Definition der
+O-Notation oder widerlegen Sie sie:
+
+An?’ +12n +2 e O(n’)
+
+Aufgabe 2 (Sortierverfahren) | [30 PUNKTE]
+
+In der folgenden Aufgabe soll ein Feld A von ganzen Zahlen aufsteigend sortiert werden. Das Feld
+habe n Elemente A[1] bis A[n]. Der folgende Algorithmus sei gegeben:
+
+1 var A: array[i..n] of integer;
+2
+
+3 procedure bubblysort
+
+4 var i, j, tmp : integer;
+
+5 magic : boolean;
+
+6 begin
+
+T magic := true;
+
+8 j := n-1;
+
+9 while (j >= 1 and magic) do
+10 begin
+
+11 magic := true;
+
+12 for i := 1 to j do
+
+13 begin
+
+14 if Ali] > Ali+1] then
+15 begin
+
+16 tmp := Ali];
+
+17 Ali] := Ali+ti];
+
+18 Ali+1] := tmp;
+
+19 magic := true;
+
+20 end
+
+21 end
+
+22 j := j-1;
+
+23 end
+
+24 end
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelpriifungsnummer: 66115 Seite: 4
+
+ 
+
+a) Sortieren Sie das folgende Feld A mittels des Algorithmus. Geben Sie die Belegung des Feldes
+nach jedem Durchlauf der inneren Schleife in einer neuen Zeile auf Ihrem Bearbeitungsbogen
+an.
+
+ 
+
+Index | 1|2|13|415
+
+ 
+
+Wert | 9
+
+on
+~J
+On
+bo
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Die folgenden Zeilenangaben beziehen sich auf den gegebenen Algorithmus.
+
+b) Geben Sie die genaue Anzahl der in Zeile 14 durchgeführten Vergleichsoperationen zwischen
+Feldelementen als Funktion f der Eingabegröße n an. Begründen Sie Ihre Antwort. (Beachten
+Sie, dass hier die genaue Anzahl gefragt ist und nicht die asymptotische Komplexität.)
+
+c) Wie muss das Feld beschaffen sein, damit möglichst wenige Vertauschungsoperationen (Zei-
+len 16-18) durchgeführt werden? Begründen Sie Ihre Antwort.
+
+d) Welche Auswirkung auf das Ergebnis des Algorithmus hätte es, wenn die Bedingung in Zeile
+14 wie folgt lauten würde? Begründen Sie Ihre Antwort.
+if Ali] < Ali+1] then
+
+e) Welche Auswirkung auf das Verhalten des Algorithmus hätte es, wenn die Bedingung in
+Zeile 14 wie folgt lauten würde? Erläutern Sie Ihre Antwort.
+if Ali] >= Ali+1] then
+
+f) Welche Auswirkung auf das Ergebnis des Algorithmus hätte es, wenn die Bedingung der
+while-Schleife in Zeile 9 wie folgt lauten würde? Begründen Sie Ihre Antwort.
+while (j>1 and magic) do
+
+g) Welche Auswirkung auf das Ergebnis des Algorithmus hätte es, wenn die Variable magic in
+Zeile 7 auf den Wert false initialisiert werden würde? Begründen Sie Ihre Antwort.
+
+h) Welche Auswirkung auf das Ergebnis des Algorithmus hätte es, wenn die Zuweisung in Zeile
+19 des Algorithmus magic := false lauten würde? Begründen Sie Ihre Antwort.
+
+i) Welche Auswirkung auf das Ergebnis des Algorithmus hätte es, wenn die Zuweisung in Zeile
+11 des Algorithmus magic := false lauten würde? Begründen Sie Ihre Antwort.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 5
+
+ 
+
+Aufgabe 3 (Streuspeicherung) [25 PUNKTE]
+
+Gegeben seien die folgenden Schlüssel & zusammen mit ihren Streuwerten h(k):
+
+ 
+
+k |?) 1] X|E/)T|SJOID
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+hk)ı7ls'2l2jolal2lo
+
+ 
+
+a) Fügen Sie die Schlüssel in der angegebenen Reihenfolge (von links nach rechts) in eine
+Streutabelle der Größe 8 ein und lösen Sie Kollisionen durch verkettete Listen auf.
+
+Stellen Sie die Streutabelle auf Ihrem Bearbeitungsbogen in folgender Art und Weise dar:
+
+Fach |! Schlüssel k (verkettete Liste, zuletzt eingetragener Schlüssel rechts)
+
+ 
+
+0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+b) Fügen Sie die gleichen Schlüssel in der gleichen Reihenfolge und mit der gleichen Streufunk-
+tion in eine neue Streutabelle ein. Lösen Sie Kollisionen diesmal durch lineares Sondieren
+mit Schrittweite -1 auf.
+
+Geben Sie für jeden Schlüssel jeweils an, welche Fächer Sie in welcher Reihenfolge sondiert,
+haben und in welchem Fach der Schlüssel schlussendlich gespeichert wird.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115
+
+Seite: 6
+
+ 
+
+c) Bei der doppelten Streuadressierung verwendet man eine primäre Streufunktion h und eine
+sekundäre Streufunktion Ah’, deren Werte wie folgt gegeben sind:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+k X T O:D
+h(k) 2 0 2/0
+h'(k) 2 7 1/1
+
+ 
+
+ 
+
+ 
+
+Die vollständige Hash-Funktion lautet dann:
+hi(k) = (h(k) +i- h’(k)) mod 8.
+
+Zu Beginn ist der Index ö = 0 und wird im Falle einer Kollision jeweils um 1 erhöht.
+
+Fügen Sie die Schlüssel in der angegebenen Reihenfolge (von links nach rechts) in eine
+
+Streutabelle der Größe 8 ein.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 7
+
+ 
+
+Aufgabe 4 (Kürzeste Wege) [10 PUNKTE|
+
+Gegeben ist der folgende, gerichtete Graph mit Kanten- bzw. Entfernungsgewichten.
+
+ 
+
+Bestimmen Sie die kürzesten Wege des Graphen vom Startknoten s aus zu allen übrigen Knoten
+mit Hilfe des Algorithmus von Dijkstra. Verwenden Sie dazu auf Ihrem Bearbeitungsbogen eine
+Tabelle der folgenden Art und markieren Sie in jeder Zeile den jeweils als nächstes zu betrachtenden
+Knoten. Tragen Sie das Endergebnis für alle Knoten in der untersten Zeile ein.
+
+s|A;iB;C|]D!IE
+
+ 
+
+ 
+
+Initialisierung
+
+ 
+
+1. Iteration
+
+ 
+
+ 
+
+Endergebnis
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+morn oR Ww DR
+
+Rm kt
+nor WwW NR ©
+
+Herbst 2021 Einzelpriifungsnummer: 66115 Seite: 8
+
+Aufgabe 5 (Algorithmenentwurf) [35 PUNKTE]
+
+Gesucht ist ein Algorithmus zur Bestimmung der kleinsten Anzahl von Münzen, die nötig sind,
+um einen bestimmten Geldbetrag zu zahlen. Hierzu sind verschiedene ganzzahlige Münzwerte
+mı,ma,...,‚m mitk>0,kEN, unddm; >1füri=1,...,&k sowie der zu zahlende ganzzahlige
+Betrag b gegeben.
+
+Beispiel: Seien die Münzwerte mı = 1, mg = 2 und ma = 5 sowie der Betrag b = 9 gegeben, so
+ist die kleinste Anzahl an Münzen drei, nämlich zwei Münzen mit dem Wert 2 und einer mit dem
+Wert 5.
+
+Gegeben ist der folgende Algorithmus, bei dem der auszuzahlende Betrag b und die Anzahl der
+Münzwerte k als ganze Zahlen übergeben werden. Die eigentlichen Münzwerte mı,ma,..., my
+werden in einem Feld m[0] bis m[k-1] übergeben. Es soll entweder die minimale Anzahl an
+Münzen zur Bezahlung des Betrags b ausgegeben werden oder -1, falls der Betrag b nicht mit den
+gegebenen Münzen auszahlbar ist.
+
+int minimum(int m[], int k, int b) {
+sort(m); // sortiert die Werte absteigend
+
+int n = 0, c = Q;
+while (b > 0) {
+
+if (b < m(n]) {
+n=n + 1;
+
+if (n >= k) {
+return -1;
+
+}
+} else {
+b=b -nln];
+c= c + 1;
+}
+}
+return Cc;
+
+a) Führen Sie den Algorithmus mit den folgenden Eingabewerten aus: m=[5,2,1], k=3, b=13.
+Geben Sie dazu die Werte der Variablen b, n und c zu Beginn eines jeden neuen Durchlauls
+der while-Schleife sowie ganz am Ende des Algorithmendurchlaufs an.
+
+b) Terminiert der Algorithmus für beliebige Werte von k und b? Begründen Sie Ihre Antwort.
+(Erinnerung: Es gilt weiterhin m, > 1.)
+
+c) Der Algorithmus gehört zur Klasse der “gierigen” Algorithmen (greedy). Es ist bekannt, dass
+diese Algorithmen nicht immer optimale Lösungen finden. Geben Sie eine Beispieleingabe
+für den Algorithmus an (Werte für m, k und b), für den der Algorithmus keine Lösung findet,
+obwohl eine existiert.
+
+d) Kann es sein, dass der Algorithmus -1 ausgibt, falls einer der Münzwerte m; = 1 ist? Be-
+gründen Sie Ihre Antwort.
+
+e) Welche Auswirkung auf das Verhalten des Algorithmus hätte es, wenn die Sortierung der
+Münzwerte in Zeile 2 fehlen würde? Begründen Sie Ihre Antwort.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 9
+
+ 
+
+f) Für das Problem soll ein rekursiver Algorithmus entwickelt werden. Als Grundlage dafür soll
+eine Rekursionsgleichung für C’(?, b) aufgestellt werden, wobei C’(i, 5) die minimale Anzahl an
+Münzen ist, die benötigt wird, um den Betrag 5 mit den Münzwerten m, bis m, zu bezahlen.
+
+Beachten Sie, dass nicht unbedingt alle Beträge zahlbar sind. Diese Fälle sollen durch den
+Wert oo repräsentiert werden.
+
+i) Welchen Wert hat die Rekursionsgleichung für den ersten Basisfall, bei dem der Betrag
+b= 0 ist, also C(z, 0)?
+
+ii) Welchen Wert hat die Rekursionsgleichung fiir den zweiten Basisfall, bei dem zwar noch
+ein positiver Betrag aber keine Münzwerte mehr zur Verfügung stehen (6 > 0 und i = 0),
+also C'(0, 5)?
+
+iii) Betrachten wir nun den ersten rekursiven Pall, für den m, > 6 gilt und wir die Münze
+m; nicht nutzen können. Geben Sie also C(t,b) an für ,5>0 undm, >b.
+
+iv) Für den verbleibenden Fall m; < b muss entschieden werden, ob die Münze m, genutzt
+werden soll oder nicht. Beide Alternativen ergeben ggf. unterschiedliche Werte, von denen
+das Minimum gewählt wird. Vervollständigen Sie die folgende Rekursionsgleichung für
+den allgemeinen Fall:
+
+C{i,b) = min((Münze m; wird nicht gewählt), (Münze m, wird gewählt) )
+
+Fortsetzung nächste Seite!
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 10
+
+ 
+
+Teilaufgabe II: Theoretische Informatik
+
+ 
+
+Aufgabe 1 (Reguläre Sprachen und endliche Automaten) [30 PUNKTE]
+
+a) Sei Lo die Sprache aller Wörter w € {a,b}*, sodass w höchstens zwei Vorkommen von a
+und mindestens zwei Vorkommen von 5b enthält. Geben Sie ein Zustandsdiagramm eines
+deterministischen endlichen Automaten an, der Lo erkennt.
+
+b) Gegeben ist das Zustandsdiagramm eines deterministischen endlichen Automaten, der Wor-
+te über dem Alphabet % = {a,b} verarbeitet. Bestimmen Sie den Minimalautomaten,
+d. h. einen deterministischen endlichen Automaten, der die gleiche Sprache akzeptiert und
+eine minimale Anzahl an Zuständen benutzt. Erläutern Sie Ihre Vorgehensweise, indem Sie
+z. B. eine Minimierungstabelle angeben, und geben Sie das Zustandsdiagramm des Minimal-
+automaten an.
+
+ 
+
+ 
+
+ 
+
+Aufgabe 2 (Chomsky-Hierarchie) [45 PUNKTE]
+
+Für reguläre Ausdrücke & sei £(«) die durch a erzeugte Sprache. Für ein Wort w und ein Symbol
+a bezeichne |w|, die Anzahl an Vorkommen von a im Wort w. Das leere Wort wird durch e
+
+symbolisiert und a? bezeichne die i-fache Wiederholung des Symbols a, d.h. a = ¢ und fiir i > 0:
+
+a’ = ga
+
+a) Für einen regwären Ausdruck & über einem Alphabet % sei die durch vertausche(£(«))
+erzeugte Sprache vertausche(£(«a)) definiert als
+
+vertausche(£(a)) = {w | du € £(a) : Va ec: |wl, = lula}
+
+D. h. der vertausche-Operator erlaubt es, die Symbolreihenfolge der in £(a) liegenden Worte
+beliebig zu ändern.
+
+Beweisen oder widerlegen Sie für jede der folgenden Sprachen, dass diese regulär sind.
+
+i) L, = vertausche(£(aab | abb))
+ii) Ly = vertausche(£(a*bb))
+ii) Zs = vertausche(£((ab)*))
+
+Fortsetzung nächste Seite!
+
+ 
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 11
+
+ 
+
+b) Sei £4 die Sprache on
+Ly = {a*b*%c' |i € Ni > OF}
+
+i) Beweisen Sie, dass die Sprache L4 nicht kontextfrei ist.
+
+ii) Zeigen Sie, dass die Sprache L4 vom Typ 1 ist, indem Sie eine Typ 1-Grammatik für
+La angeben. Erläutern Sie für Ihre Grammatik insbesondere, wie Worte aus La damit
+hergeleitet werden, und warum Worte, die nicht in £4 liegen, nicht hergeleitet werden
+können.
+
+Aufgabe 3 (NP-Vollständigkeit) [25 PUNKTE]
+
+Das CLIQUE-Problem kann in der gegeben/gefragt-Notation (als Entscheidungsproblem) definiert
+werden durch:
+
+ 
+
+CLIQUE |
+
+gegeben: Ein ungerichteter Graph G = (V, E) und eine natürliche Zahl k >21.
+
+gefragt: Hat G eine k-Olique? D.h.: Gibt es eine Knotenmenge X C V mit |K| > k, sodass
+alle Knoten in K paarweise verbunden sind (für alle u,v € K gilt: Wenn u ¥ v,
+dann {u,v} e E)?
+
+ 
+
+ 
+
+ 
+
+Das CLIQUE-Problem ist NP-vollständig.
+
+Ein blau-weiß-gefärbter Graph ist ein Tupel (V, E, col), wobei (V, E) ein ungerichteter Graph
+ist und col eine Knotenfärbung mit den Farben blau und weiß ist, d.h. für alle Knoten ve V gilt
+col(v) € {blau, weiß}. Das BLAUE-UND-WEISSE-CLIQUE-Problem ist definiert als:
+
+ 
+
+BLAUE-UND-WEISSE-CLIQUE
+
+gegeben: Ein blau-weiß-gefärbter Graph G = (V, E,col) und eine natürliche Zahl k >21.
+
+gefragt: Hat G sowohl eine blaue als auch eine weiße k-Clique? D.h.: Gibt es Knotenmen-
+gen Ki, Ky CV mit |K,| > & und {Ko} > k, sodass alle Knoten in K, blau sind
+(vu € Kı: col(v) = blau), alle Knoten in Ky weiß sind (Vv € Kz: col(v) = weiß)
+und fiir i = 1,2: alle Knoten in Ä; paarweise verbunden sind (für alle uveK,
+gilt: Wenn u # v, dann {u,v} € E)?
+
+ 
+
+ 
+
+ 
+
+a) Zeigen Sie, dass BLAUE-UND-WEISSE-CLIQUE e NP gilt.
+
+b) Zeigen Sie, dass das BLAUE-UND-WEISSE-CLIQUE-Problem NP-schwer ist, indem Sie
+eine Polynomialzeitreduktion von CLIQUE auf BLAUE-UND-WEISSE-CLIQUE durch-
+führen.
+
+Hinweis: Der Begriff NP-schwer ist gleichbedeutend mit dem Begriff NP-hart.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 12
+
+ 
+
+Aufgabe 4 (Berechenbarkeit) [20 PUNKTE]
+
+Beweisen oder widerlegen Sie für die folgenden Sprachen, dass diese entscheidbar sind. Die
+Gödel-Nummer der Turingmaschine M wird dabei mit (M) bezeichnet.
+
+a) Ls = {(M) | M macht für jede Eingabe w € {a,b}* mindestens 42 Schritte}
+b) Ze = {{M) | M hält nicht bei Eingabe ba und M macht mehr als 20 Schritte bei Eingabe aa}
+
+-13 -
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 13
+
+ 
+
+Thema Nr. 2
+(Aufgabengruppe)
+
+Es sind alle Aufgaben dieser Aufgabengruppe zu bearbeiten!
+
+Teilaufgabe I: Algorithmen
+
+ 
+
+Aufgabe 1 (Minimale Spannbäume) [32 PUNKTE]
+
+Gegeben sei folgender ungerichteter Graph G = (V, E) mit Kantengewichten w: EN.
+
+ 
+
+ 
+
+a) Berechnen Sie mithilfe des Jarnik-Prim-Algorithmus einen minimalen Spannbaum 7’ von G
+beginnend von Knoten a. Bearbeiten Sie Knoten bei Wahlfreiheit in alphabetischer Reihen-
+folge.
+
+Erstellen Sie dazu eine Tabelle mit zwei Spalten und stellen Sie jeden einzelnen Schritt des
+Verfahrens in einer eigenen Zeile dar. Geben Sie in der ersten Spalte denjenigen Knoten v an,
+der vom Algorithmus als nächstes in T aufgenommen wird (der neue “schwarze” Knoten).
+Führen Sie in der zweiten Spalte alle anderen vom aktuellen Baum 7 direkt erreichbaren
+Knoten v (die “grauen” Knoten) auf, die noch nicht im aktuellen Baum enthalten sind.
+Notieren Sie Knoten immer zusammen mit deren Vorgänger und der Distanz zum Vorgänger
+als Tripel: (Knoten, Vorgänger, Distanz).
+
+b) Zeichnen Sie den minimalen Spannbaum aus Teilaufgabe a) und geben Sie sein Gewicht an.
+c) Begründen Sie, dass G genau einen minimalen Spannbaum hat.
+
+d) Wählen Sie ein neues Gewicht für eine Kante, so dass es mindestens drei minimale
+Spannbäume gibt. Begründen Sie Ihre Antwort oder geben Sie drei minimale Spannbäume
+explizit an.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 14
+
+ 
+
+Aufgabe 2 (Binäre Suchbäume) | [17 PUNKTE]
+
+Gegeben sei folgender binärer Suchbaum:
+
+ 
+
+a) Fügen Sie den Wert 6 in den binären Suchbaum ein und stellen Sie den resultierenden binären
+Suchbaum graphisch dar.
+
+b) Entfernen Sie den Wert 15 aus dem Suchbaum, sodass die binäre Suchbaumeigenschaft
+erhalten bleibt. Stellen Sie Ihr Ergebnis graphisch dar. Gehen Sie dabei vom ursprünglichen
+Suchbaum aus und nicht von Ihrem Ergebnis aus Teilaufgabe a).
+
+c) Gegeben sei folgender Algorithmus, der über den Aufruf IsBinarySearchTree(T.root) prüfen
+soll, ob ein gegebener Binärbaum 7’ mit paarweise verschiedenen Werten die Suchbaum-
+Eigenschaft erfüllt.
+
+1 IsBinarySearchTree(node)
+
+2 if node == null then
+3 [_ return true
+
+else if node.left != null and node.left.key > node.key then
+s | return false
+
+ip
+
+6 else if node.right != null and node.right.key < node.key then
+7 Ih return false
+
+8 else
+9 | return IsBinarySearchTree(node.left) and IsBinarySearchTree(node.right)
+
+Geben Sie ein Beispiel an, für das der Algorithmus ein falsches Ergebnis liefert und erklären
+Sie, wo der Fehler liegt.
+
+d) Beschreiben Sie einen alternativen Weg, wie tatsächlich in linearer Laufzeit überprüft werden
+kann, ob ein gegebener Binärbaum T' mit paarweise verschiedenen Werten die Suchbaum-
+Eigenschaft erfüllt.
+
+Aufgabe 3 (© -Notation) [25 PUNKTE]
+
+a) Gilt zwischen den folgenden Mengen eine Teilmengenbeziehung? Ist diese echt? Geben Sie
+einen formalen Beweis an.
+
+Ofn”log(n)) O(vn®)
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 15
+
+ 
+
+b)
+
+Ordnen Sie folgende Funktionen paarweise (soweit möglich) bezüglich der O-Notation. Geben
+Sie jeweils eine kurze Begründung an. Schreiben Sie f < g gdw. f € O(g). Die Transitivitat
+von < muss nicht gezeigt werden. Geben Sie auch an, welche Funktionen hinsichtlich <
+unvergleichbar oder äquivalent sind.
+
+n?, wennn gerade
+e filn)=:
+
+2”, wenn n ungerade
+3 fo (7) = n
+© fs(n) = log (nl!)
+
+© fa(n) = n°
+
+Aufgabe 4 (Quicksort) 46 PUNKTE]
+
+Gegeben sei folgende Implementierung des QuickSort-Verfahrens für Arrays mit paarweise ver-
+schiedenen Elementen in Pseudocode:
+
+1
+
+2
+3
+4
+5
+
+QuickSort(A, f= 1,r = A.length)
+
+if <r then
+i =Partition(A, £, r, FindPivot(A, £,r))
+QuickSort(A, 2, — 1)
+QuickSort(A, i+ 1,r)
+
+Die nicht angegebene Funktion FindPivot wählt hierbei einen beliebigen Index aus dem überge-
+benen Bereich als Pivot-Element aus.
+
+a)
+
+b)
+
+Vervollständigen Sie den Algorithmus, indem Sie eine passende Implementierung von
+Partition(A, £,r, pivotIndex) als Pseudocode angeben. Für die Laufzeit soll (ohne Beweis)
+gelten, dass Partition(A, £, r, pivotInder) € O{r — £). Beachten Sie auch die Verwendung des
+Rückgabewerts ab Zeile 3. Es ist keine Fehlerbehandlung für ungültige Eingaben verlangt.
+
+Wenden Sie den oben angegebenen QuickSort auf das Array [3,7,1,8,5,2,6,4] an. Als Pivot-
+Element soll hierbei die Funktion FindPivot immer das am weitesten rechts stehende Ele-
+ment auswählen, d.h. FindPivot(A,£&,r) = r. Geben Sie nach jedem Partition-Aufruf den
+betrachteten Arrayabschnitt zusammen mit den Parametern £,r, und AlpivotIndex] an. Für
+Arrayabschnitte mit zwei Elementen oder weniger genügt es, das Ergebnis direkt anzugeben.
+
+Nun soll die QuickSort-Funktion so abgeändert werden, dass sie in möglichst kurzer Zeit das
+k-kleinste Element des Arrays findet, ohne dass das Array fertig sortiert sein muss. Gesucht
+ist also das Element, das an der k-ten Position landen würde, wenn man das Array komplett
+fertig sortieren würde. Geben Sie den entsprechend veränderten Algorithmus an.
+
+Hinweis: Kann nach dem Aufruf von Partition das Pivot-Element nochmal seinen Platz
+wechseln?
+
+Fortsetzung nächste Seite!
+
+ 
+
+ 
+ 
+
+Herbst 2021 Finzelpriifungsnummer: 66115 Seite: 16
+
+d) Gehen Sie nun davon aus, dass die Funktion FindPivot in linearer Laufzeit den Index des
+Medians des übergebenen Bereichs zurückgibt. Analysieren Sie die Laufzeit Ihrer veränderten
+Implementierung in O-Notation.
+
+Hinweis: Für eine endliche Menge von Zahlen mit n. Elementen ist der Median wie folgt
+definiert: Betrachtet man die Folge der der Größe nach aufsteigend sortierten Zahlen
+L1, «., Ln; 50 ist der Median
+
+®@ X(n41)/2; falls n ungerade ist,
+
+@ 2njo, falls n gerade ist.
+
+Teilaufgabe II: Theoretische Informatik
+
+Aufgabe 1 (Reguläre Sprachen) [26 PUNKTE]
+
+a) Geben Sie einen möglichst kurzen regulären Ausdruck an, der genau alle Wörter über dem
+Alphabet {a,b} akzeptiert, die nicht das Teilwort ab beinhalten.
+
+b) Geben Sie einen möglichst kurzen regulären Ausdruck an, der genau alle Wörter über dem
+Alphabet {a,b} akzeptiert, die genau einmal das Teilwort ab beinhalten.
+
+c) Geben Sie einen deterministischen endlichen Automaten mit möglichst wenigen Zuständen
+an, der genau alle Wörter über dem Alphabet {a,b,c} akzeptiert, die genau einmal das
+Teilwort ab beinhalten.
+
+d) Minimieren Sie den folgenden deterministischen endlichen Automaten.
+
+ 
+
+ 
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 17
+Aufgabe 2 (Regularität und Kontextfreiheit) [34 PUNKTE]
+
+a) Zeigen Sie, dass die Sprache
+
+Lı = {a”b”" |n,meN,n<m}
+
+nicht regulär ist.
+
+b) Ist Lo = {wyrwoyws | wi, we, ws € {a}* U {b}", x,y © {a,b}, |u| = [wa] = |ws|,x # y} eine
+kontextfreie Sprache? Beweisen Sie Ihre Antwort.
+
+c) Zeigen Sie mit dem CYK-Algorithmus, dass das Wort w = caaaabc in der Sprache der
+Grammatik G = ({A,B,C,S}, {a,b,c}, P, S) mit
+
+P={S53SA|CC,
+
+ACC,
+B>SC|b,
+C+BBlalc}
+enthalten ist. Geben Sie zwei verschiedene Ableitungsbäume von w für die Grammatik G
+an.
+Aufgabe 3 (Entscheidbarkeit) [30 PUNKTE|
+
+Seien Z, Zı und Ls Sprachen über dem Alphabet 2. Sei Z das Komplement von L, das heißt
+L=[wei*|lwe&Ll}.
+
+a) Definieren Sie, was man unter einer entscheidbaren Sprache Z versteht.
+
+b) Definieren Sie, was man unter einer semi-entscheidbaren Sprache Z versteht.
+
+c) Zeigen Sie: Falls eine Sprache Z und ihr Komplement L semi-entscheidbar sind, dann ist die
+Sprache L entscheidbar.
+
+d) Zeigen Sie: Falls eine Sprache L semi-entscheidbar ist, sind die Sprachen LALund LUL
+immer entscheidbar.
+
+e) Sei M, die Turingmaschine, die durch einen String w kodiert wird. Sei 77 die Sprache
+{w | M, akzeptiert die Eingabe w}. Beweisen Sie, dass H eine unentscheidbare Sprache ist.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66115 Seite: 18
+
+Aufgabe 4 (Komplexität) [30 PUNKTE]
+
+Betrachten Sie die folgenden Probleme, die in Abhängigkeit einer Zahl k € {1,2,3,...} definiert
+sind:
+
+ 
+
+EXACT-COVER-BY-k
+
+Gegeben: Eine endliche Menge X mit |X| mod k = 0 und eine Menge C
+von k-elementigen Teilmengen von X, d-h. VC €C: |C| = k und
+
+CCX,
+
+Frage: Gibt es eine Teilmenge S von C, sodass S eine Partition von X
+ist?
+
+ 
+
+ 
+
+ 
+
+Hinweis: S ist eine Partition von X genau dann, wenn X = },.s 5 und alle Mengen in 5 paarweise
+disjunkt sind.
+
+Beispiel: Sei X = {1,2,3,4,5,6}. Dann ist |X] mod 3 = 0 und eine Menge von 3-elementigen
+Mengen C beispielsweise {{1,2,3}, {1,3, 4}, {2,3, 5}, {1,5,6}}. Jedoch gilt (X,C) ¢ Exact-
+COVER-BY-3, da es keine Menge S C C gibt, in der jedes Element von X exakt einmal vorkommt.
+
+a) Zeigen Sie, dass EXACT-COVER-BY-4 in NP ist.
+
+b) Nehmen Sie an, dass EXACT-COVER-BY-3 (EC3) NP-vollstandig ist und zeigen Sie damit,
+dass EXACT-COVER-BY-4 (EC4) NP-schwer ist.
+
+Hinweis: Der Begriff NP-schwer ist gleichbedeutend mit dem Begriff NP-hart.
+
+ 

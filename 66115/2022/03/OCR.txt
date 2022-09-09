@@ -1,0 +1,558 @@
+ 
+
+Prüfungsteilnehmer Prüfungstermin Einzelprüfungsnummer
+
+ 
+
+Kennzahl:
+
+ 
+
+Frühjahr
+Kennwort: 66 1 1 5
+2022
+
+ 
+
+Arbeitsplatz-Nr.:
+
+ 
+
+Erste Staatsprüfung für ein Lehramt an öffentlichen Schulen
+
+— Prüfungsaufgaben —
+
+ 
+
+Fach: Informatik (vertieft studiert)
+Einzelprüfung: Theoretische Informatik, Algorithmen
+Anzahl der gestellten Themen (Aufgaben): 2
+
+Anzahl der Druckseiten dieser Vorlage: 13
+
+ 
+
+Bitte wenden!
+ou» wDXND m
+
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 2
+
+ 
+
+Thema Nr. 1
+(Aufgabengruppe)
+
+Es sind alle Aufgaben dieser Aufgabengruppe zu bearbeiten!
+
+Teilaufgabe I: Algorithmen
+
+ 
+
+Aufgabe 1 (Asymptotische Notation) [25 PUNKTE]
+
+Sortieren Sie die folgenden Funktionen nach ihrem asymptotischen Wachstum,
+sodass f;(n) € O(fi+ı(n)) gilt. Markieren Sie auch, ob f;(n) € O(firı(n)) gilt.
+
+nlog;(2"), An?, nvn?, 2, n? log, (n), moa
+
+Aufgabe 2 (Laufzeit) [15 PUNKTE]
+
+Gegeben ist der folgende Algorithmus (in Java-Notation):
+
+boolean func(int n) {
+for (inti=2; i* i<=n;i+t=i1) f
+if (a 4% i == 0)
+return false;
+}
+return true;
+3
+
+Hinweis: Das Zeichen % steht fiir den Modulo-Operator.
+
+a) Beschreiben Sie, was dieser Algorithmus bei der Eingabe der ganzen Zahl n allgemein be-
+rechnet.
+
+b) Welche bestmögliche asymptotische obere Schranke besitzt die Worst-Case-Laufzeit dieses
+Algorithmus in Abhängigkeit des Parameters n? Begründen Sie Ihre Antwort!
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 3
+
+Aufgabe 3 (Dijkstra) [30 PUNKTE]
+
+ 
+
+Eine Iteration in Dijkstras Algorithmus entfernt genau einen Knoten aus der Priority-Queue.
+Angenommen nach vier Iterationen auf dem obigen Graphen sieht der Inhalt der Priority-Queue
+wie folgt aus:
+
+(a, 3), (d, 7), (b, 00), (4, 00), (¢, 00)
+
+a) Nennen Sie den Startknoten, von dem der Algorithmus gestartet wurde! Begriinden Sie Ihre
+Antwort!
+
+b) Führen Sie die restlichen Iterationen durch und geben Sie jeweils den Inhalt der Priority-
+Queue nach jeder Iteration an!
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 4
+
+ 
+
+Aufgabe 4 (Algorithmenentwurf) [50 PUNKTE]
+
+a) Geben Sie die Postorderreihenfolge des Baums an!
+
+ 
+
+b) Zeigen Sie durch Angabe eines Gegenbeispiels, dass aus der Postorderreihenfolge der Knoten
+eines binären Baums (mit paarweise verschiedenen Schlüsseln) die Struktur des Baums nicht
+eindeutig rekonstruiert werden kann.
+
+c) Im Folgenden sind die Postorder- und Inorderreihenfolge eines binären Baums gegeben.
+Nehmen Sie an, dass die Schlüssel der Knoten paarweise verschieden sind. Ziel ist es nun
+einen Algorithmus zu implementieren, der die eindeutige Struktur des (binären) Baumes
+wiedergibt.
+
+- Überlegen Sie sich zunächst, wo die Wurzel innerhalb der Postordertravesierung zu
+finden ist.
+
+- Bestimmen Sie nun die Postorder- und Inordertravesierung des rechten und linken
+Teilbaums.
+
+- Entwickeln Sie nun den Algorithmus und geben Sie ihn in einer objektorientierten
+Programmiersprache Ihrer Wahl oder in Pseudocode an.
+Implementieren Sie dazu eine Methode construct, die ein Array post mit der Postorder-
+reihenfolge und ein Array in mit der Inorderreihenfolge bekommt (und ggf. die Länge
+dieser Arrays) und den zugehörigen Baum berechnet.
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 5
+
+ 
+
+Teilaufgabe II: Theoretische Informatik
+
+ 
+
+Aufgabe 1 (Gemischte Fragen) [35 PUNKTE]
+
+Geben Sie für jede der folgenden Aussagen an, ob sie wahr oder falsch sind. Beweisen Sie Ihre
+Antwort.
+
+a) Für jede Sprache L gilt Lt = L* \ {e}.
+
+b) Sei L eine Sprache und =; die zugehörige Myhill-Nerode Relation. Wenn L regulär ist, so
+sind alle Aquivalenzklassen von =,;, endlich.
+
+c) Die Sprache L = {a"b™ | n,m € N;n 4m} ist kontextfrei.
+Hinweis: N ={1, 2, 3,...}
+
+d) Sei M eine Turingmaschine und x € &* ein Eingabewort. Sei
+
+(7 M hält auf x
+Ce
+® sonst.
+
+Dann ist die Sprache Z entscheidbar.
+e) Wenn P = NP gilt, so sind alle Probleme aus P NP-vollständig.
+
+f) Angenommen es gibt eine polynomielle Reduktion f von einem NP-vollständigem Problem
+A auf ein Problem B. Dann folgt aus der Existenz von f, dass B in NP liegt.
+
+g) Angenommen es gibt eine polynomielle Reduktion f von einem NP-vollständigem Problem
+A auf ein Problem B. Dann folgt aus der Existenz von f, dass B NP-schwer ist.
+
+Aufgabe 2 (Reguläre Sprachen) [25 PUNKTE]
+
+a) Geben Sie einen deterministischen endlichen Automaten (DEA) für die von folgendem re-
+gulären Ausdruck dargestellte Sprache über dem Alphabet D = {a,b} an:
+
+a* U (ab)*
+
+(Alternative Schreibweise: a* + (ab)*)
+
+Hinweis: Sie können zuerst einen nicht-deterministischen endlichen Automaten (NEA) kon-
+struieren und diesen dann in einen DEA umwandeln.
+
+b) Geben Sie einen DEA mit minimaler Anzahl an Zuständen an, der die selbe Sprache akzep-
+tiert wie folgender DEA. Dokumentieren Sie Ihr Vorgehen geeignet.
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 6
+
+ 
+
+ 
+
+ 
+
+ 
+
+c) Sei L eine reguläre Sprache über dem Alphabet %. Zeigen Sie, dass dann die Sprache
+L' = {wıwy € D* | wı € L, wa € &*} regular ist.
+
+Aufgabe 3 (Chomsky-Hierarchie) [30 PUNKTE]
+
+Bestimmen Sie für die folgenden Sprachen jeweils, ob sie regulär sind und ob sie kontextfrei sind.
+Beweisen Sie Ihre Antworten. Für „Ja“-Antworten genügt es eine geeignete Beschreibung (Gram-
+matik/regulärer Ausdruck) oder einen geeigneten Akzeptor (Automat) ohne Korrektheitsbeweis
+anzugeben.
+
+a) Li = {a"b” |n,m € N;n — m > 100}
+b) Lg = {a"b™ | n,m € N;n-m > 100}
+
+c) La = {a"b"d |n,m,leN;n:m=1}
+Hinweis: N ={1, 2, 3....}
+
+Aufgabe 4 (Entscheidbarkeit) [30 PUNKTE]
+
+Entscheiden Sie für die folgenden Sprachen, ob sie entscheidbar und ob sie semi-entscheidbar sind.
+Beweisen Sie jeweils Ihre Antwort. (M) bezeichnet dabei die Gödelnummer der Turing-
+maschine M.
+
+a) Ly = {(Mı)#(Ma) |e € L(Mı)NL(M2)}
+b) Le = {(Mi)#( Mo) | e € L(M}) \ L(M3)}
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 7
+
+ 
+
+Thema Nr. 2
+(Aufgabengruppe)
+
+Es sind alle Aufgaben dieser Aufgabengruppe zu bearbeiten!
+
+Teilaufgabe I: Algorithmen
+
+ 
+
+Aufgabe 1 (Doppelt-verkettete Listen) [34 PUNKTE]
+
+Elemente einer zyklischen, doppelt-verketteten Liste seien durch Objekte vom Typ Element re-
+präsentiert, wobei jedes Element E die Attribute
+
+oe F.key für den Schlüsselwert des Elements,
+e E.next für das nächste Element in der Liste und
+
+e E.prev für das vorherige Element in der Liste
+
+besitzt. Aufgrund der zyklischen Verkettung gilt: Für das letzte Listenelement zeigt next auf das
+erste Listenelement und für das erste Listenelement zeigt prev auf das letzte Listenelement.
+
+Eine Liste L wird durch das Attribut L.head repräsentiert, welches auf das erste Listenelement
+zeigt. Eine leere Liste wird dadurch repräsentiert, dass L.head = null gilt.
+
+Eine Illustration für die Liste mit Schlüsselwerten 10, 30, 25, 8 ist
+
+ 
+
+head
+
+ 
+
+ 
+
+ 
+
+ 
+
+Y
+
+prev key next prev key next prev key next prev key next
+@ @ G | > ® ® e— > ® @ ®
+
+IA v A va VY A
+10 30 25 8
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+® I > ®
+
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Geben Sie für jede der folgenden Operationen einen Algorithmus in Pseudo-Code an, welcher
+die jeweilige Operation durchführt. Schätzen Sie die jeweilige Laufzeit ab und erläutern Sie die
+Funktionsweise Ihrer Algorithmen.
+
+a) Aneinanderhängen zweier zyklischer doppelt-verketteter Listen Ly, Lo.
+
+b) Verdoppeln aller Schlüsselwerte mit Schlüsselwert k
+
+c) Löschen aller Listenelemente mit Schlüsselwert k
+)
+
+d) Umdrehen der Reihenfolge der Listenelemente
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 8
+
+ 
+
+Aufgabe 2 (Minimale Spannbäume) [20 PUNKTE]
+
+Finden Sie einen minimalen Spannbaum für den folgenden Graphen, indem Sie den Algorith-
+mus von Kruskal per Hand ausführen. Erläutern Sie die Funktionsweise des Kruskal-Algorithmus
+allgemein und dokumentieren Sie die Ausführung des Algorithmus für den Graphen schrittweise.
+
+7 (o\ 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 9
+
+ 
+
+Aufgabe 3 (Laufzeitanalysen, Komplexität, O-Notation) [31 PUNKTE]
+
+a) Ordnen Sie die folgenden Funktionen in der Reihenfolge ihres asymptotischen Wachstums,
+so dass f; € O(fi41) gilt.
+
+nl, log,(5n2),  n™, 2nlog,(5n), Vrlog,(n‘)
+
+b) Sei A ein Feld mit n > 2 Einträgen All],... A[n]. Bestimmen Sie für jeden der folgenden in
+Pseudo-Code gegebenen Algorithmen mithilfe der Laufzeitanalyse eine möglichst gute obere
+Schranke (in O-Notation) für dessen Laufzeit in Abhängigkeit des Parameters n.
+
+Begründen Sie Ihre Antwort jeweils.
+
+(i) fors:=1;i<n;i:=i+1ldo
+All =:
+end-for
+for j:=1;5j <n;j:=j+1do
+fork:=1;k<n;k:=k+1do
+Ab] = Al] + Alkl;
+end-for
+end-for
+(ii) for 3 := 2,37 <wir=irj do
+Ak -1]:= Al -1+1;
+
+end-for
+(iii) for ¢:=0;2 < n?;i:=i+n do
+A[1] = A[1] + 1;
+end-for
+
+(iv) fori:=1;i<n;i:=i+1do
+for 7 i= 1; j <n; 7 =—7 + 2 do
+Aly] := Ald] + Aly]
+end-for
+end-for
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 10
+
+ 
+
+Aufgabe 4 (Äpfel mit Birnen vergleichen) [35 PUNKTE]
+
+Gegeben sei eine geordnete Folge von Früchten, welche aufsteigend nach ihrem Gewicht angeordnet
+sind. Früchte können Apfel und Birnen sein. Gesucht ist jenes Paar, bestehend aus einem Apfel
+und einer Birne, dessen Gewichtsunterschied am kleinsten ist.
+
+Die Folge der Länge n mit n>2 von Früchten ist in einem Feld A mit den Indizes von 1 bis n
+abgespeichert (die Folge ist daher A[l],...,A[n]). Für jeden Eintrag Ali] gibt es zwei Attribute
+Ali]. Art € {Apfel, Birne} und Alil.Gewicht € N für das Gewicht (in Gramm). In der Folge der
+Früchte gibt es mindestens einen Apfel und mindestens eine Birne.
+
+a) Geben Sie einen Algorithmus in Pseudo-Code an, der in Laufzeit O(n) zwei Indizes i und j
+als Ausgabe liefert, so dass { Ali], A[j]} ein Paar aus einem Apfel und einer Birne ist und der
+Gewichtsunterschied von Ali] und A[7] minimal ist. Erläutern Sie die Funktionsweise und
+begründen Sie die Laufzeit und die Korrektheit Ihres Algorithmus.
+
+b) Nehmen Sie an, dass alle Äpfel leichter sind als alle Birnen, d. h. in A kommen zunächst
+alle Äpfel, dann alle Birnen. Geben Sie unter dieser Annahme einen Algorithmus für das
+Problem aus Teilaufgabe a) an, der Laufzeit o(n) hat (also insbesondere eine echt bessere
+Laufzeit als O({n) hat). Schätzen Sie die Laufzeit Ihres Algorithmus ab und erläutern Sie Ihr
+Vorgehen.
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 11
+
+ 
+
+Teilaufgabe II: Theoretische Informatik
+
+ 
+
+Aufgabe 1 (Kurzfragen) [25 PUNKTE]
+
+Entscheiden Sie, ob die folgenden Aussagen wahr oder falsch sind. Begründen Sie jeweils Ihre
+Entscheidung kurz. Falls eine Aussage sich durch ein konkretes Beispiel (bzw. Gegenbeispiel)
+beweisen (bzw. widerlegen) lässt, geben Sie eines an. Nur auf die richtige Angabe von „wahr“ oder
+„falsch“ gibt es keine Punkte.
+
+a) Sein eine natürliche Zahl und X eine Sprache, die alle Wörter der Länge > n enthält. Dann
+ist X regulär.
+
+b) Sei M ein nichtdeterministischer endlicher Automat (NFA) über dem Alphabet 5, der die
+Sprache X akzeptiert. Wenn man aus allen Endzuständen Nichtendzustände macht und
+umgekehrt, erhält man einen NFA fiir das Komplement von X, also fiir die Sprache D*\ X.
+
+c) Sei X eine Sprache, die von einem nichtdeterministischen Kellerautomaten mit End-
+zuständen erkannt wird. Dann ist X kontextfrei, aber nicht deterministisch kontextfrei.
+
+d) Beschreiben oder skizzieren Sie alle minimalen deterministischen endlichen Automaten
+(DFA), bei denen alle Zustände Endzustände sind. Begründen Sie, weshalb Ihre Lösung
+alle diese DFAs erfasst.
+
+e) Nennen Sie eine konkrete reguläre Sprache, die mindestens zwei unendlich große Myhill-
+Nerode-Klassen besitzt. Geben Sie diese zwei Klassen explizit an und begründen Sie, warum
+diese wirklich Myhill-Nerode-Klassen der Sprache sind.
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 12
+
+ 
+
+Aufgabe 2 (Kontextfreie Sprachen) [40 PUNKTE]
+
+1. Wir betrachten die Sprache L = {a*bc! | k,l € INo;k > 1 > 0} über dem Alphabet
+= dam byep
+
+a) Geben Sie eine kontextfreie Grammatik für Z an. Sie müssen nicht beweisen oder be-
+gründen, dass die Grammatik ZL erzeugt. Verwenden Sie höchstens drei Nichtterminale.
+Produktionen der Form A — e sind erlaubt.
+
+b) Zeichnen Sie einen deterministischen Kellerautomaten, der L mit Endzustand erkennt.
+Verwenden Sie nicht mehr als vier Zustände.
+
+Hinweis: Geben Sie Übergänge in der Form x, X /w an, wobei x € {a, b,c} das gelesene
+Zeichen der Eingabe ist, X das oberste Kellersymbol und w die Sequenz an Symbolen,
+durch die X ersetzt wird, wobei das oberste Symbol links steht. Geben Sie auch an,
+welches Symbol initial auf dem Keller steht.
+
+c) Zeigen Sie, dass L nicht regular ist.
+
+2. Wir betrachten die kontextfreie Grammatik G = ({S}, {a,b}, P,S) mit den Produktionen
+P= {S — baa | aSba | SS}.
+
+Zeigen Sie: Jedes Wort w € L(G) erfiillt |w|, = 2|w|,, d-h. es enthalt doppelt so viele
+Buchstaben a wie b.
+
+Verwenden Sie hierfür eine geeignete Induktion über die Ableitung S —* w. Geben Sie in
+jedem Induktionsfall klar an, welches die Induktionshypothesen sind (falls vorhanden), was
+zu zeigen ist und an welchen Stellen Sie die Induktionshypothesen verwenden.
+
+Aufgabe 3 (DFA-Konstruktion) [25 PUNKTE]
+
+Gegeben sind eine Sprache X C I* und ein Zeichen c € D. Es wird die Sprache
+X. := {ucv | uv € X}
+
+definiert, deren Wörter dadurch entstehen, dass in ein Wort aus X an genau einer Stelle c einfügt
+wird.
+
+Beispiel: {aa, abd}, = {caa, aca, aac, cabd, achd, abcd, abdc}
+
+Zeigen Sie, dass X, regular ist, falls X regular ist. Geben Sie hierfiir eine Konstruktion an, die
+aus einem NFA fiir X einen NFA für X. macht. Beweisen Sie die Korrektheit Ihrer Konstruktion
+formal.
+
+Erinnerung: Ein NFA akzeptiert ein Wort w = wı...wn gdw. es einen Lauf 9 —> ... > m
+gibt, der im Startzustand go beginnt und in einem Endzustand q„ endet.
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer: 66115 Seite: 13
+
+ 
+
+Aufgabe 4 (Entscheidbarkeit und NP) [30 PUNKTE]
+
+1. Zeigen Sie: Wenn X € NP ist, dann ist auch X* e NP.
+
+2. Entscheiden Sie für jede der folgenden Sprachen, ob sie entscheidbar ist. Falls eine Sprache
+nicht entscheidbar ist, geben sie zusätzlich an, ob sie oder ihr Komplement semi-entscheidbar
+sind.
+
+Begründen Sie ihre Antworten jeweils knapp. Formale Beweise sind nicht gefordert, aber
+nicht Offensichtliches muss kurz begründet werden.
+
+a) Li = {w | M,le] hält in <|w| Schritten}
+b) Lz = {w | M, halt fiir héchstens 10 Eingaben}
+c) Lz = {w | gw ist WHILE-berechenbar }
+
+Hinweis zur Notation:
+
+€ bezeichnet das leere Wort.
+„Semi-entscheidbar“ ist synonym zu „rekursiv aufzählbar“.
+
+M., bezeichnet die Turing-Maschine, die durch das Wort w kodiert wird.
+
+M„[z] bezeichnet die Ausführung von M, auf der Eingabe x.
+
+(yw bezeichnet die von M,, berechnete Funktion, d.h. p,(x) ist das Ergebnis von M„|[x]
+falls die Ausführung hält, und _ sonst.
+

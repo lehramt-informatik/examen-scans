@@ -1,0 +1,303 @@
+ 
+
+Priifungsteilnehmer Priifungstermin Einzelprüfungsnummer
+
+ 
+
+ 
+
+ 
+
+| F ee h ®
+Kennwort: ru J ahr 66l 1 8
+Arbeitsplatz-Nr.: 2 0 2 2
+
+ 
+
+Erste Staatsprüfung für ein Lehramt an öffentlichen Schulen
+— Prüfungsaufgaben —
+
+ 
+
+Fach: Informatik (vertieft studiert)
+Einzelprüfung: Fachdidaktik
+
+Anzahl der gestellten Themen (Aufgaben): 3
+Anzahl der Druckseiten dieser Vorlage: 7
+
+ 
+
+Bitte wenden!
+Frühjahr 2022 Einzelprüfungsnummer 66118 Seite 2
+
+ 
+
+Thema Nr. 1
+
+Stichworte: Objektorientierte Modellierung und Programmierung, Datenkapselung, mehrwertige Be-
+ziehungen, Unterrichtsplanung
+
+Der LehrplanPLUS legt für das Fach Informatik in der 10. Jahrgangsstufe unter anderem folgende Kom-
+petenzen und Inhalte fest.
+
+ 
+
+Inf10 Lernbereich 2: Objektorientierte Modellierung und Programmierung (ca. 27 Std.)
+Kompetenzerwartungen
+Die Schülerinnen und Schüler ...
+
+e wenden eine eindimensional indizierte Datenstruktur bei einfachen Problemstellungen zur
+Speicherung und Verwaltung gleichartiger Daten an.
+
+e analysieren und modellieren Objektbeziehungen und das Kommunikationsverhalten innerhalb
+eines Systems (beispielsweise eines Fahrradverleihs).
+
+e implementieren die im Klassendiagramm festgelegten Beziehungen sachgerecht durch
+Referenzen, um während der Laufzeit des Programms die Kommunikation zwischen den
+entsprechenden Objekten durch den Aufruf geeigneter Methoden zu ermöglichen. Dabei wird
+ihnen die Grundidee der Datenkapselung bewusst.
+
+e modellieren und implementieren im Rahmen eines einfachen Beispiels aus der Praxis (etwa der
+Mitgliederverwaltung eines Vereins) eine Struktur zur Verwaltung gleichartiger Objekte. Hierbei
+entwickeln sie ausgewählte Methoden, z. B. zum Einfügen, Entfernen und Bearbeiten von
+Elementen.
+
+e nutzen in Generalisierungshierarchien das Konzept des Polymorphismus zur Implementierung
+verschiedener Verhaltensweisen, z. B. die spartenabhängige Berechnung der Mitgliedsbeiträge
+eines Sportvereins.
+
+Inhalte zu den Kompetenzen:
+
+e eindimensional indizierte Datenstruktur (Array/Feld): Index, Element, Länge
+
+e Interpretation von Klassen als Datentypen
+
+e Umsetzung von Klassenbeziehungen unterschiedlicher Kardinalitäten mithilfe von Referenzen
+
+e Kommunikation zwischen Objekten durch Methodenaufrufe, Datenkapselung durch kontrollierten
+Zugriff auf die Attribute
+
+e Polymorphismus und Uberschreiben von Methoden
+
+ 
+
+ 
+
+ 
+
+Aufgabe 1: Datenkapselung
+
+a) Erläutern Sie, was unter „Datenkapselung durch kontrollierten Zugriff auf die Attribute“ zu
+verstehen ist!
+
+b) Sie wählen für eine Unterrichtsstunde zu dem Thema einen problemorientierten Zugang.
+Entwickeln Sie ein motivierendes, übersichtliches Einstiegsbeispiel, das die Problematik des
+unkontrollierten Zugriffs auf Attribute deutlich macht! Geben Sie dafür passende Ausschnitte
+aus dem Quellcode in einer für den Unterricht geeigneten Programmiersprache an!
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer 66118 Seite 3
+
+ 
+
+c)
+d)
+
+e)
+
+Schildern Sie auf einer Seite, wie Sie das Beispiel im Unterricht einsetzen!
+
+Geben Sie an, wie eine Variante Ihres Beispiels aussieht, die Datenkapselung berücksichtigt!
+Erstellen Sie einen altersgerechten Hefteintrag zum Thema ,,Datenkapselung durch
+kontrollierten Zugriff auf die Attribute“! Fiir Beispiele diirfen Sie auf Ihre Ergebnisse aus 1b)
+und 1d) verweisen.
+
+Aufgabe 2: Modellierung und Umsetzung mehrwertiger Beziehungen (1:n)
+
+Die vierte Kompetenzerwartung zielt auf die Modellierung und Implementierung mehrwertiger Bezie-
+hungen (1:n) bei der Verwaltung gleichartiger Objekte ab.
+
+a)
+
+b)
+
+d)
+
+e)
+
+Gehen Sie davon aus, dass Ihre Schülerinnen und Schüler bereits in der Lage sind, Referenzen
+zur Realisierung von einwertigen Beziehungen (1:1) zu verwenden und diese Beziehungen auch
+zur Kommunikation nutzen können. Schildern Sie ein altersgerechtes, problemorientiertes
+Szenario (nicht die Mitgliederverwaltung eines Vereins) zur Hinführung zu den mehrwertigen
+Beziehungen (1:n)!
+
+Für die Umsetzung Ihres Szenarios aus a) schlägt eine Schülerin bzw. ein Schüler vor, eine große
+Anzahl von Referenzattributen des passenden Typs vorzusehen. Geben Sie drei Argumente an,
+die davon überzeugen sollen, dass der Vorschlag keine sinnvolle Vorgehensweise ist!
+
+Mit einem Feld (Array) steht eine Umsetzungsmöglichkeit für die mehrwertige Beziehung (1:n)
+zur Verfügung. Daneben stellen nahezu alle Programmiersprachen Bibliotheksklassen zur
+Umsetzung von indizierten Listenstrukturen bereit. Diskutieren Sie fachlich und fachdidaktisch
+— auch unter Berücksichtigung der beiden beschriebenen Anwendungsfälle „Einfügen und
+Entfernen von Elementen“ — die Eignung der beiden Alternativen und treffen Sie eine
+Entscheidung für Ihren Unterricht!
+
+Geben Sie drei beobachtbare Feinziele für eine Einführungsstunde zur „Modellierung und
+Umsetzung mehrwertiger Beziehungen“ an!
+
+Schildern Sie nachvollziehbar den Unterrichtsverlauf der Unterrichtsstunde aus 2d)!
+Frühjahr 2022 Einzelprüfungsnummer 66118 Seite 4
+
+ 
+
+Thema Nr. 2
+
+Stichworte: Projekt, Fundamentale Ideen, Prozessmodell
+Im LehrplanPLUS für Gymnasien findet sich für das Fach Informatik in der 10. Jahrgangsstufe der fol-
+gende Abschnitt:
+
+ 
+
+Inf10 Lernbereich 3: Projekt (ca. 12 Std.)
+Kompetenzerwartungen
+Die Schiilerinnen und Schiiler ...
+e erstellen im Team einen Projektplan, um eine Datenbank bzw. ein objektorientiertes Programm zu
+einem Szenario aus ihrer Erfahrungswelt, wie z. B. einem Buchungssystem (ggf. mit
+Benutzerschnittstelle) oder einem einfachen Spiel, zu entwickeln.
+
+e analysieren das gegebene Szenario und modellieren relevante Ausschnitte durch ein
+Klassendiagramm und ggf. weitere Diagramme. Dabei arbeiten sie ggf. mit bereits existierenden
+Modellen bzw. Modellausschnitten.
+
+e implementieren zum gegebenen Szenario arbeitsteilig und auf Grundlage der vorhandenen
+Modellierung die Datenbank einschließlich geeigneter Abfragen bzw. das objektorientierte
+Programm.
+
+e testen die entwickelte Datenbank bzw. das entwickelte Programm hinsichtlich der Anforderungen
+des gegebenen Szenarios.
+
+e dokumentieren ihre Projektarbeit geeignet.
+
+Inhalte zu den Kompetenzen:
+e Datenbank- bzw. Softwareentwicklungsprojekt: Planung, Modellierung, Implementierung, Test,
+Dokumentation
+
+ 
+
+ 
+
+ 
+
+Aufgabe 1:
+
+Unter „Inhalte zu den Kompetenzen“ finden Sie Phasen des Entwicklungsprozesses, zu denen die
+Modellierung gehört. Zeigen Sie, dass die vier von Schwill spezifizierten Kriterien der fundamentalen
+Ideen auch auf die Modellierung anwendbar sind!
+
+Aufgabe 2:
+
+Der Lehrplan lässt Ihnen die Wahl, ob Sie in Ihrem Unterricht ein Datenbank- oder ein Softwareprojekt
+durchführen.
+a) Beschreiben Sie für beide Alternativen je eine Projektidee aus der Erfahrungswelt der
+
+Schülerinnen und Schüler, die sich für ein Datenbank- bzw. Softwareprojekt im Fach Informatik
+der 10. Jahrgangsstufe eignet (nicht Buchungssystem)!
+
+b) Erläutern Sie, welche Faktoren bei der Entscheidung zwischen Datenbank- und
+Programmierprojekten eine Rolle spielen können und inwiefern diese für bzw. gegen die
+jeweilige Alternative sprechen! Entscheiden Sie sich begründet für eine der beiden Varianten
+oder schlagen Sie eine dritte Alternative vor!
+
+Fortsetzung nächste Seite!
+Frtihjahr 2022 Einzelprüfungsnummer 66118 Seite 5
+
+c) Erklären Sie, welche Voraussetzungen gegeben sein müssen, damit Sie das Projekt im Unterricht
+erfolgreich durchführen und die im Lehrplan geforderten Kompetenzerwartungen erreichen!
+
+Aufgabe 3:
+
+Für das Projekt sind ca. 12 Schulstunden vorgesehen.
+
+a) Nennen Sie fünf beobachtbare Feinziele, die Ihre Schülerinnen und Schüler im Laufe der
+Projektarbeit erreichen sollen!
+
+b) Wählen Sie hierfür ein Prozessmodell (z. B. Wasserfallmodell, agile Entwicklung), mit dem Ihr
+Projekt realisiert werden soll und begründen Sie aus fachdidaktischer Sicht, warum Sie sich für
+dieses Modell entschieden haben!
+
+c) Entwerfen Sie anschließend eine Grobplanung für ein Unterrichtsprojekt in Doppelstunden aus
+fachdidaktischer Sicht! Achten Sie bei Ihrer Planung darauf, dass deutlich wird, welche Phasen
+des Entwicklungsprozesses in welcher Doppelstunde vorkommen und berücksichtigen Sie bei
+Ihrer Argumentation die Ergebnisse und Entscheidungen aus den vorherigen Aufgaben!
+Verweisen Sie an passender Stelle auf Ihre formulierten Lernziele!
+Frithjahr 2022 Einzelprüfungsnummer 66118 Seite 6
+
+ 
+
+Thema Nr. 3
+
+Stichworte: Beitrag zu übergreifenden Bildungs- und Erziehungszielen, Testen von Programmen, Un-
+terrichtsentwurf, Programmierwerkzeug
+
+Aufgabe 1
+
+Der LehrplanPLUS des bayerischen Gymnasiums legt in den Fachprofilen den Beitrag des jeweiligen
+Fachs zur allgemeinen Bildung sowie zu übergreifenden Bildungs- und Erziehungszielen dar.
+a) Das Fach Informatik leistet demnach „einen wichtigen Beitrag bei der Entwicklung der
+
+Abstraktionsfähigkeit.“ Begründen Sie diese Aussage! Gehen Sie dabei insbesondere auf einen
+konkreten Inhalt des Fachlehrplans Informatik ein!
+
+b) Laut seinem Fachprofil trägt der Informatikunterricht unter anderem jedoch auch zur
+Werteerziehung und zum sozialen Lernen bei. Zeigen Sie jeweils kurz anhand eines konkreten
+Beispiels auf, welche Lehrplaninhalte hier in besonderer Weise eine Rolle spielen!
+
+Aufgabe 2
+
+Im bereits unter Aufgabe 1 angesprochenen Fachprofil Informatik heißt es unter Punkt 2.2
+„Prozessbezogene Kompetenzen“ beim Teilbereich „Implementieren“:
+
+„[...] nach der Implementierung sind die Schülerinnen und Schüler in der Lage, ihre Modelle in
+konkreten Situationen zu testen [...] und ggf. Fehler zu korrigieren. “
+
+Die Fähigkeit Programme zu testen ist folglich eine Forderung, die sich aus dem Lehrplan ableiten lässt.
+a) In einer Unterrichtsstunde am Ende der Jahrgangsstufe 10 antwortet eine Schülerin oder ein
+
+Schüler auf die Frage der Lehrkraft, ob denn das Programm ausreichend getestet sei: „Ja, denn
+beim Übersetzen des Programms hat der Compiler keinen Fehler gemeldet.“ Formulieren Sie
+eine altersgerechte und aus fachdidaktischer Sicht sinnvolle Erklärung, warum es sich hierbei
+um eine falsche Annahme handelt!
+
+Nach dieser Unterrichtsstunde sind Sie fest entschlossen, das Thema „Testen von Programmen“ künftig
+in Ihrem Informatikunterricht früher und stärker in den Fokus zu rücken.
+b) Bereits in Jahrgangsstufe 7 setzen die Schülerinnen und Schüler einfache Algorithmen mit Hilfe
+
+von geeigneten Programmierwerkzeugen um. In den Jahrgangsstufen 9 und 10 beschäftigen Sie
+sich unter anderem mit objektorientierter Programmierung.
+Entwickeln Sie ein Konzept unter Berücksichtigung des Spiralprinzips zur Förderung der
+Fähigkeit Programme zu testen! Beachten Sie hierbei folgende Aspekte:
+e Die Inhalte Ihres Konzepts sollen nicht in separaten Unterrichtseinheiten vermittelt
+werden, sondern in den lehrplangemäßen Unterricht integriert werden!
+e Wählen Sie für Jahrgangsstufe 7 und für die Jahrgangsstufen 9/10 jeweils ein passendes
+Entwicklungswerkzeug aus, an das Sie Ihr Konzept anpassen!
+e Die Beschreibung Ihres Konzepts muss auch konkrete Möglichkeiten beinhalten, wie
+Lernende — der jeweiligen Jahrgangsstufe angepasst — ihre Programme überprüfen
+können!
+
+Fortsetzung nächste Seite!
+Frühjahr 2022 Einzelprüfungsnummer 66118 Seite 7
+
+Am Ende der Jahrgangsstufe 10 planen Sie mit Ihrer Klasse ein Softwareprojekt im Umfang von etwa
+12 Unterrichtsstunden.
+c) Kurz vor diesem Projekt möchten Sie die in b) vorgestellten Teststrategien im Unterricht noch
+einmal wiederholen und einüben. Beschreiben Sie eine passende Doppelstunde (textuelle Form),
+in der Sie Selbsttätigkeit Ihrer Schülerinnen und Schüler in geeigneter Weise integrieren!
+
+Aufgabe 3
+
+Eine Kollegin oder ein Kollege meint: „Ich lasse die Schülerinnen und Schüler bereits in Jahrgangs-
+stufe 9 mit einer professionellen IDE, wie zum Beispiel „Eclipse“ oder „IntelliJ IDEA“, arbeiten. Dann
+können sie auch gleich von Anfang an vernünftig debuggen.“ Nehmen Sie dazu aus fachdidaktischer
+Sicht Stellung! Gehen Sie dabei sowohl auf allgemeine Aspekte einer professionellen IDE sowie auf die
+angesprochene integrierte Debugging-Möglichkeit ein!
+

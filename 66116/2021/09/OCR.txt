@@ -1,0 +1,1147 @@
+ 
+
+ 
+
+Prüfungsteilnehmer Prüfungstermin Einzelprüfungsnummer
+
+Kennzahl:
+
+ 
+
+Herb
+Kennwort: an we
+
+2021
+
+ 
+
+Arbeitsplatz-Nr.:
+
+ 
+
+Erste Staatsprüfung für ein Lehramt an öffentlichen Schulen
+
+— Prüfungsaufgaben —
+
+ 
+
+Fach: | Informatik (vertieft studiert)
+Einzelpriifung: Datenbanksysteme, Softwaretechnologie
+Anzahl der gestellten Themen (Aufgaben): 2
+
+Anzahl der Druckseiten dieser Vorlage: 20
+
+ 
+
+Bitte wenden!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 2
+
+Thema Nr. 1
+(Aufgabengruppe)
+
+Es sind alle Aufgaben dieser Aufgabengruppe zu bearbeiten!
+Alle Lösungsschritte sind sorgfältig zu begründen!
+
+Teilaufgabe I: Datenbanksysteme
+
+ 
+
+Aufgabe 1 (Datenmodellierung mit dem ER-Modell) [34 PUNKTE]
+
+Wir betrachten eine Datenbank, die Informationen einer Klinik abbildet.
+
+e Eine Klinik besitzt einen Namen, ein Baujahr, eine eindeutige ID und ist in einer Stadt
+
+b)
+
+c)
+d)
+
+ansässig.
+
+Eine Klinik besteht aus mindestens zwei Stationen. Eine Station hat einen Namen, einen
+Stationsleiter sowie eine eindeutige Stationsnummer und ist genau einer Klinik zugeordnet.
+
+Weiterhin sind einer Station mehrere Ärzte zugeordnet. Ein Arzt hat einen Namen, ein
+Fachgebiet und eine eindeutige Sozialversicherungsnummer (kurz: SVNr). Ein Arzt kann
+mehreren Stationen zugeordnet werden.
+
+Die Klinik dient der Versorgung von Patienten. Patienten können dabei auf mehreren Sta-
+tionen behandelt werden. Jedem Patienten wird ein zuständiger Arzt zugewiesen. Ein Arzt
+kann für mehrere Patienten verantwortlich sein. Auf einer Station können mehrere Patienten
+behandelt werden.
+
+Ein Patient besitzt einen Namen, eine eindeutige Patientennummer und ein Geburtsdatum.
+
+Es soll davon ausgegangen werden, dass ein Patient auf jeder seiner Stationen wegen jeweils
+einer Krankheit behandelt wird, welche als Zahlencode dargestellt wird.
+
+Modellieren Sie die oben beschriebene Situation möglichst vollständig in einem erweiterten
+ER-Diagramm. Kennzeichnen Sie die Schlüssel der Entity-Typen durch Unterstreichen und
+geben Sie für die Relationship-Typen jeweils Funktionalitäten in Chen-Notation oder in
+(MIN, MAX)-Notation an.
+
+Ubertragen Sie Ihr ER-Modell in das relationale Datenmodell. Erstellen Sie dazu die Tabellen
+Klinik, Patient und Behandelt (Patient wird in Station behandelt) mit Hilfe von CREATE
+TABLE Statements in SQL. Berücksichtigen Sie für die Tabellen Patient und Behandelt die
+Fremdschlüsselbeziehungen, und geben Sie für die Tabelle Patient explizit sinnvolle Update-
+und Delete-Modi über ON UPDATE bzw. ON DELETE an. Wählen Sie sinnvolle Datentypen.
+
+Was versteht man unter Redundanzen? Wann können diese nützlich sein?
+
+Nennen Sie jeweils einen Vor- und Nachteil eines relationalen Datenbanksystems.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021
+
+Einzelprüfungsnummer: 66116
+
+Seite: 3
+
+ 
+
+Aufgabe 2 (SQL und relationale Algebra)
+
+[32 PUNKTE
+
+Wir betrachten eine Datenbank zur Speicherung von Flugdaten. Die Datenbank enthält die Ta-
+bellen Flughafen, Flugzeug und Flug, deren Inhalt im Folgenden in Auszügen angegeben ist:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Flughafen
+Kürzel Name Terminalanzahl
+ATL Atlanta 7 Flugzeug
+LAX Los Angeles 6 Modell_Nr | Plätze
+FRA Frankfurt 2 A380 555
+DFW | Dallas/Fort Worth 5 A220 115
+DXB Dubai 3 A330 406
+CDG Paris 3
+LHR London 5
+Flug
+Flug_Nr | Modell_Nr | Startflughafen | Zielflughafen | Abhebezeit | Landezeit
+3015 A380 LAX DEW 08:22 13:32
+3015 A380 DEW ATL 16:33 19:32
+3015 A380 ATL CDG 21:36 11:45
+1508 A220 DXB FRA 07:12 12:44
+1508 A220 FRA LHR 14:50 16:16
+1508 A220 LHR CDG 18:50 21:14
+2303 A220 DEW FRA 08:52 16:34
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelpriifungsnummer: 66116 Seite: 4
+
+ 
+
+a) Geben Sie das Ergebnis des folgenden relationalen Ausdrucks angewandt auf die oben darge-
+stellten Auszüge der Datenbank an:
+
+T= IIrtus_Nr,Dep,Arr (OModell_Nr = ‘4380’ ( O( Abhebezeit+Dep,Landezeit-+Arr) (Flug))) ,
+o bezeichnet die Variablenumbenennung.
+
+b) Geben Sie das Resultat der folgenden SQL-Anweisung angewandt auf die oben dargestellten
+Auszüge der Datenbank an:
+
+SELECT Flug_Nr, COUNT(*) AS Stops
+FROM Flug
+
+GROUP BY Flug_Nr
+
+HAVING Stops <> 1;
+
+c) Schreiben Sie eine SQL-Anweisung, die die Anzahl der Terminals jedes Flughafens um 1 ver-
+ringert.
+
+d) Schreiben Sie eine SQL-Anweisung, die eine View erzeugt, die die Namen der Flughäfen enthält,
+die von einem Flugzeug angeflogen werden, dessen Modell Nr mit A3 beginnt. Angeflogen
+bedeutet hier starten oder landen.
+
+e) Schreiben Sie eine SQL-Anweisung, die den Flug mit der Flug_Nr 2503 für die Modellnummer
+A330 von Atlanta nach Dubai (Abflug 10:30, Ankunft 20:15 Uhr) einfügt.
+
+f) Schreiben Sie eine SQL-Anweisung, die alle Flüge mit Zielflughafen in Atlanta löscht.
+
+g) Schreiben Sie eine SQL-Anweisung, die die Namen und die Terminalanzahlen aller Flughäfen
+zurückliefert, deren Terminalanzahl größer ist als die durchschnittliche Terminalanzahl aller
+Flughäfen. Die Flughäfen sollen absteigend nach ihrer Terminalanzahl ausgegeben werden, bei
+Gleichheit alphabetisch sortiert.
+
+h) Schreiben Sie eine SQL-Anweisung, die die Modellnummern all jener Flugzeuge zurückliefert,
+die im Laufe eines Gesamtfluges denselben Flughafen mehrfach anfliegen. Geben Sie jedes Paar
+von Modellnummer und Flughafenkürzel nur einmal aus. Ein Gesamtflug setzt sich aus allen
+Teilflügen mit der gleichen Flug_Nr zusammen.
+
+Fortsetzung nächste Seite!
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 5
+
+Aufgabe 3 (Funktionale Abhängigkeiten und Zerlegungen) [31 PUNKTE]
+
+Gegeben sei das Relationenschema R = (U,F) mit der Attributmenge U und der Menge F' von
+funktionalen Abhängigkeiten:
+
+U = {A,B,C,D,E,G},
+
+F {{B} = {E,G}, {B,G} > {A,E}, {D} = {A,C},
+
+i
+
+{A,C} > {D, E,G}, {C,D} > {FE} }.
+
+a) Zeigen Sie, dass die funktionale Anhängigkeit [C, D} — {A,G} bereits aus F folgt.
+
+b) Geben Sie alle Kandidaten-Schlüssel für das Relationenschema R sowie die nicht-primen
+Attribute an (mit Begründung).
+
+c) Ist Rin 3NF, ist Rin BCNF? Begründen Sie jeweils Ihre Antwort.
+
+d) Geben Sie eine Basis (kanonische Überdeckung) G von F an und führen Sie damit die
+3NF-Synthese aus.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+. Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 6
+
+Aufgabe 4 (Transaktionen) [23 PunKTE!
+
+a) Gegeben sei der folgende Schedule.
+
+ 
+
+Ty Ts | Ts
+read(Z)
+read(Y)
+read(X)
+write(Z)
+write(X)
+write(X)
+read{Z)
+write(X)
+write(Z)
+
+ 
+
+ 
+
+Alle Transaktionen sollen am Ende erfolgreich beendet werden (commit).
+
+Priifen Sie den Schedule auf konfliktbasierte Serialisierbarkeit. Geben Sie eine Begrtindung
+und alle möglichen Serialisierungsreihenfolgen an.
+
+b) Beschreiben Sie das Problem des Lost Update. Geben Sie ein Beispiel hierfür an.
+
+c) Beschreiben Sie das Zwei-Phasen-Sperrprotokoll. Benennen Sie hierfür die beiden Phasen
+und geben Sie ein Beispiel für einen Schedule an, der nicht dem Zwei-Phasen-Sperrprotokoll
+entspricht und welcher aus maximal zwei Transaktionen und zwei Variablen besteht.
+
+d) Welche Vorgehensweise in Verbindung mit dem Zwei-Phasen-Sperrprotokoll benötigt man,
+um Deadlocks zu vermeiden?
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelpriifungsnummer: 66116 Seite: 7
+
+Teilaufgabe II: Softwaretechnologie
+
+ 
+
+Aufgabe 1 (UML-Klassendiagramım) [30 PUNKTE]
+
+Wir betrachten in dieser Aufgabe das Szenario Online-Shop. Erstellen Sie hierfür ein UML-
+Klassendiagramm entsprechend der folgenden Beschreibung. Setzen Sie insbesondere Klassen
+(mit Vererbungsbeziehungen), Assoziationen (mit Namen und Leserichtungen), Attribute, Opera-
+tionen und Rollennamen ein. Verwenden Sie dabei Kompositionsbeziehungen an geeigneten Stel-
+len und wählen Sie sinnvolle Multiplizitäten. Legen Sie zudem entsprechende Sichtbarkeiten fest;
+wählen Sie öffentliche Sichtbarkeit, wenn keine Sichtbarkeit explizit genannt wird. Setzen Sie für
+Attribute geeignete Datentypen.
+
+Jeder Händler hat einen Namen und bietet ein Sortiment von mindestens zehn Artikeln an. Jeder
+Artikel hat eine spezifische Artikelnummer (Ganzzahl), welche für alle Artikel fortlaufend verge-
+ben wird, beginnend bei 1 als Startwert. Jeder Artikel wird von genau einem Händler angeboten.
+Mittels einer Operation des Händlers kann für die gegebene Artikelnummer der Artikel gesucht
+werden. Zusätzlich werden für jeden Artikel eine textuelle Beschreibung, der Preis als Gleitpunkt-
+zahl sowie optional eine Bewertung als ganze Zahl zwischen 0 und 5 spezifiziert.
+
+Jeder Kunde hat mindestens einen Vornamen und genau einen Nachnamen. Premium-Kunden
+sind spezielle Kunden, für welche eine privat sichtbare Bonuspunktzahl hinterlegt ist. Für jeden
+Kunden ist zudem eine nur in der Klasse selbst und in Unterklassen sichtbare Rechnungsadresse
+persistiert. Kunden tätigen Bestellungen, wobei jede Bestellung genau einem Kunden zugeordnet
+ist. Für jede Bestellung ist ihr Status sowie die privat sichtbare Lieferadresse hinterlegt. Daraus
+leitet sich für jeden Kunden die Anzahl der getätigten Käufe ab. Eine Bestellung umfasst mehrere
+Artikel, die jeweils mit einer Angabe der Anzahl referenziert werden. Jede Adresse enthält eine
+Straße, eine Hausnummer (zur Vereinfachung eine Ganzzahl), eine Postleitzahl sowie einen Ort;
+es werden also nur Inlandssendungen berücksichtigt.
+
+Jeder Händler kann eine Menge an Paketdiensten beauftragen, wobei Paketdienste für mehrere
+Händler liefern dürfen. Jeder Paketdienst hat einen Namen. Je nach Status sind Bestellungen ent-
+weder dem jeweiligen Händler (Status im Warenkorb oder gekauft) oder dem Paketdienst (Status
+versendet oder empfangen) zur Verwaltung zugeordnet und von diesem existentiell abhängig.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+4
+
+2
+
+3
+
+4
+
+in
+
+10
+
+11
+
+42
+
+13
+
+14
+
+iB
+
+16
+
+qT
+
+18
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 8
+
+Aufgabe 2 (White-Box-Testverfahren) [30 PUNKTE)
+
+Ihnen ist folgende Methode (in Java) gegeben. Diese Methode prüft, ob die übergebene Zei-
+chenkette aus mindestens zwei Zeichen besteht und mindestens eine Ziffer und mindestens einen
+kleingeschriebenen Buchstaben beinhaltet. Als Eingabe sind alle möglichen Zeichenketten erlaubt.
+
+public static boolean checkPassword(String pw) {
+boolean result = true;
+if (pw == null || pw.lengthO < 2) {
+result = false;
+} else {
+boolean numbersUsed = false;
+boolean charactersUsed = false;
+for (int i = 0; i < pw.length(); it+) {
+char c = pw.charAt(i);
+if (c >= '0' k&c <= '9') f
+numbersUsed = true;
+} else if (c >= 'a' kc <= 'z') f{
+charactersUsed = true;
+}
+}
+
+result = numbersUsed && charactersUsed;
+
+}
+
+return result;
+
+a) Geben Sie für die Methode einen Kontrollflussgraphen an, wobei Sie die Knoten mit den
+jeweiligen Zeilen des Prorammcodes beschriften.
+
+b) Geben Sie eine minimale Testmenge an, die das Kriterium der Zweigüberdeckung (Kan-
+tenüberdeckung) erfüllt. Geben Sie für jeden Testfall den Kontrollfluss als Pfad in der Nota-
+tion 1 3 2-4... an. Welches Testkriterium wird dabei ebenfalls auf jeden Fall erfiillt?
+
+c) Geben Sie die Größe (Mächtigkeit) der minimalen Testmenge an, die benötigt wird, um
+das Kriterium der Boundary-Interior-Pfadüberdeckung zu erfüllen und erläutern Sie Ihre
+Antwort. Geben Sie darüber hinaus zwei Testfälle aus der Testmenge an, die verschiedene
+Pfade abdecken. Geben Sie für jeden Testfali den Kontrollfiuss als Pfad in der Notation
+11> 2-... an.
+
+Hinweis: Eine Testmenge ist minimal, wenn es keine Testmenge mit einer kleineren Zahl von
+Testfällen gibt. Die Minimalität muss nicht bewiesen werden.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 9
+
+ 
+
+Aufgabe 3 (Projektmanagement) | (30 PUNKTE|
+
+Gegeben sei folgende Tabelle zur groben Planung eines hypothetischen Softwareprojekts:
+
+ 
+
+Aktivitat Dauer [Monate] Einschränkungen
+
+Entwurf 3 _
+
+Implementierung 4 Startet frühestens nach Ende der Entwurfs-
+phase.
+
+Testen 5 Startet mit Beginn der Implementierung. En-
+det 1 Monat nach Ende der Implementierungs-
+phase.
+
+a) Welcher essentielle Schritt muss der Entwurfsphase im klassischen Projektmanagement vor-
+ausgehen?
+
+b) Erstellen Sie ein Gantt-Diagramm, das die Aktivitäten und Abhängigkeiten des obigen
+Projektplans beschreibt.
+
+c) Erstellen Sie nun ein CPM Netzwerk, das die Aktivitäten und Abhängigkeiten des obi-
+gen Projektplans beschreibt. Fügen Sie dazu einen Startknoten ein, von dem der Beginn
+aller Aktivitäten abhängt, sowie einen Endknoten, der vom Ende aller oben aufgeführten
+Aktivitäten abhängt.
+
+d) Berechnen Sie anhand des CPM-Netzwerks für jedes Ereignis die früheste Zeit, die spätes-
+te Zeit und die Pufferzeit. Das Projekt startet zum Zeitpunkt 0.
+
+e) Geben Sie einen kritischen Pfad durch das CPM-Netzwerk an. Was folgern Sie für das
+Projektende für den Fall, dass sich eine Aktivität verzögert?
+
+f} Nennen Sie drei agile Projektorganisationsformen.
+
+Fortsetzung nächste Seitel
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 10
+
+ 
+
+Aufgabe 4 (Entwurfsmuster) | [30 PunKTE]
+
+Gegeben ist folgendes UML-Klassendiagramm, welches eine grafische Bibliothek darstellt.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Circle
+ao +draw()
+<<ZUSE>>
+ye
+GraphLibrary 7
+Rectangle
++drawCircle() - 2875
++drawRectangle() | +draw()
++drawTriangle() \
+aN
+<< USe>>
+I
+
+\ | Triangle
+
+ 
+
+ 
+
++draw()
+
+ 
+
+ 
+
+ 
+
+Im Folgenden soll ein abgewandeltes Factory-Entwurfsmuster angewandt und ein neues UML-
+Klassendiagramm ausgehend von diesem Muster erstellt werden.
+
+a)
+
+Wenden Sie das Entwurfsmuster Factory an und erstellen Sie ein neues UML-Klassen-
+diagramm ausgehend von diesem Muster, Erweitern Sie dazu auf Ihrem Bearbeitungsbogen
+das Klassendiagramm um die Klasse Client, welche ein Attribut Name besitzt und die
+Klasse GraphLibrary benutzt. Die Klasse GraphLibrary soll nur eine drawShape() Methode
+enthalten, der ein Figurtyp als String übergeben wird. Des Weiteren soll diese Klasse eine
+ShapeFactory enthalten. Die ShapeFactory soll in der Lage sein, über eine Methode die
+jeweiligen Figuren instanziieren zu können.
+
+Erstellen Sie ein Sequenzdiagramm für folgendes Szenario: Der Client Bob ruft die Me-
+thode zum Zeichnen einer Figur vom Typ Circle der Klasse GraphLibrary auf. Daraufhin
+wird in der GraphLibrary das entsprechende Factory-Objekt erzeugt. Auf der erzeugten
+Factory wird die Methode zum Erzeugen einer Figur vom Typ Circle aufgerufen, Letztend-
+lich wird die Methode draw() der erzeugten Figur von der Klasse GraphLibrary aufgerufen.
+
+Geben Sie den Quelltext in einer objektorientierten Programmiersprache Ihrer Wahl für
+die Implementierung der Klassen ShapeFactory und Graphlibrary an. Dabei muss die in
+Teilaufgabe b beschriebene Funktionalität gewährleistet werden. Die Klasse ShapeFactory
+soll in der Lage sein, Figuren vom Typ Circle, Rectangle und Triangle zu erzeugen. Im
+Falle von anderen Typen wird null zurückgegeben. Geben Sie eine Fehlermeldung auf der
+Konsole aus, falls ein nicht unterstützter Figurtyp angegeben wird.
+
+-11-
+
+ 
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 11
+
+ 
+
+Thema Nr. 2
+(Aufgabengruppe)
+
+Es sind alle Aufgaben dieser Aufgabengruppe zu bearbeiten!
+Alle Lösungsschritte sind sorgfältig zu begründen!
+
+Teilaufgabe I: Datenbanksysteme
+
+ 
+
+Aufgabe 1 (Vermischte Fragen) [12 PUNKTE]
+
+a) Was versteht man unter referentieller Integrität? Erläutern Sie in ein bis zwei Sätzen.
+
+b) Was ist der Unterschied zwischen einem INNER JOIN und einem LEFT OUTER JOIN?
+Erläutern Sie in ca. zwei Sätzen.
+
+c) Welche Auswirkung hat die Verwendung von ON UPDATE CASCADE bei einem Fremdschliissel-
+attribut? Erläutern sie in ein bis zwei Sätzen.
+
+d) Warum kann eine abgeschlossene (committed) Transaktion nicht wieder zurückgesetzt wer-
+den? Begründen sie in ein bis zwei Sätzen.
+
+e) Was versteht man unter Datenunabhängigkeit? Erklären Sie in ein bis zwei Sätzen.
+
+f) Was sind Trigger und wofür werden diese verwendet”? Erläutern Sie in ein bis zwei Sätzen.
+
+Aufgabe 2 (ER-Modellierung) [28 PUNKTE]
+
+Im Folgenden finden Sie die Beschreibung einer Fahrradvermietung. Erstellen Sie zu dieser Be-
+schreibung ein erweitertes ER-Diagramm. Kennzeichnen Sie die Primärschlüssel durch Unterstrei-
+chen und geben Sie die Kardinalitäten in Chen-Notation (= Funktionalitäten) an. Kennzeichnen
+Sie auch die totale Teilnahme von Entity-Typen an Beziehungstypen.
+
+Es gibt Fahrräder. Diese haben eine eindeutige Rahmennummer, eine Farbe sowie eine Modellbe-
+zeichnung. Außerdem gibt es Mieter, die über eine eindeutige Mieternummer identifiziert werden
+können. Ein Mieter kann entweder eine Person oder eine Firma sein. Jede Person hat einen Nach-
+namen und einen Vornamen, ein Geburtsdatum und eine Handynummer, mit der diese eindeutig
+identifiziert werden kann. Jede Firma hat einen eindeutigen Namen und einen Hauptsitz. Ein
+Mieter kann ein Fahrrad über eine bestimmte Zeit mieten, wobei die insgesamt fällige Höhe der
+zu leistenden Mietzahlungen gespeichert wird und genau ein Zahlungsmittel zum Einsatz kommt.
+Der Mieter kann sich für jedes Mietverhältnis zwischen der Zahlung per- Kreditkarte oder Last-
+schrift entscheiden. Für das Lastschriftverfahren wird die international eindeutige IBAN und der
+Name des Kontoinhabers erfasst, bei Zahlung mit Kreditkarte der Name des Karteninhabers, die
+eindeutige Kartennummer, das Ablaufdatum sowie der Kartenanbieter, der automatisch aus der
+Kartennummer hergeleitet werden kann.
+
+Fortsetzung nächste Seite!
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 12
+
+Aufgabe 3 (Relationaler Entwurf) | [20 PunKTE]
+
+Entwerfen Sie zum untenstehenden ER-Diagramm ein verfeinertes Relationenschema mit
+möglichst wenigen Relationen.
+
+Verwenden Sie dabei folgende Notation: Primärschlüssel werden durch Unterstreichen gekennzeich-
+net, Fremdschlüssel durch die Nennung der Relation, auf die sie verweisen, in eckigen Klammern
+hinter dem Fremdschlüsselattribut. Attribute zusammengesetzter Fremdschlüssel werden durch
+runde Klammern als zusammengehörig markiert. Wenn ein Attribut zur korrekten Abbildung des
+ER-Diagramms als UNIQUE oder NOT NULL ausgezeichnet werden muss, geben Sie dies an.
+
+Beispiel:
+
+Relationi (Primärschlüssel, Attributi, Attribut2,
+Fremdschlüsselattribut1[Relationi],
+
+(Fremdschlüssel2_Attributi, Fremdschlüssel2_Attribut2) [Relation2]);
+Attributi UNIQUE
+Attribut2 NOT NULL
+
+Name
+
+gic 5
+esitzt
+IBAN Kunde 1
+Adresse TetefonNr
+Nummer > Caress) N
+Telefon
+
+InstallDatum 1 1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Geburtsdatum Privatkunde Firmenkunde
+
+Familt d
+Umsatz$teuerNr > >
+
+#Einheiten N N
+—unrzeit I Anrufzeitgunkt |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 13
+
+Aufgabe 4 (SQL) 132 PUNKTE]
+
+Gegeben sind folgende Relationen:
+
+Spieler(SpielerID, Vorname, Nachname, Adresse, Gehalt,
+MannschaftsID[Mannschaft] )
+
+Mannschaft (MannschaftsID, Bezeichnung, Ort, Kapitaen[Spieler], Torwart[Spieler])
+Bezeichnung UNIQUE NOT NULL
+
+Kapitaen NOT NULL
+
+Torwart NOT NULL
+
+Fremdschlüssel werden durch die Nennung der Relation, auf die sie verweisen, in eckigen Klam-
+mer dargestellt. Verwenden Sie im Folgenden nur Standard-SQL und keine produktspezifischen
+Erweiterungen. Sie dürfen bei Bedarf Views anlegen. Geben Sie einen Datensatz nicht mehrfach
+aus.
+
+a) Schreiben Sie eine SQL-Anweisung, die die Tabelle Spieler anlegt. Gehen Sie davon aus, dass
+die Tabelle Mannschaft bereits existiert.
+
+b) Schreiben Sie eine SQL-Anweisung, die Vor- und Nachnamen der Spieler aller Mannschaften
+aus München ausgibt, absteigend sortiert nach SpielerID.
+
+c) Schreiben Sie eine SQL-Anweisung, die Vor- und Nachnamen sowie das Gehalt von Spielern
+ausgibt, die mehr verdienen als der Kapitän ihrer Mannschaft. Sortieren Sie die Ausgabe
+absteigend nach dem Gehalt.
+
+d) Schreiben Sie eine SQL-Anweisung, die das Gehalt von allen Spielern aus der Mannschaft
+mit der ID 42 um 15% erhöht.
+
+e) Schreiben Sie eine SQL-Anweisung, welche die Vor- und Nachnamen und das Gehalt der fünf
+schlechtbezahltesten Spieler ausgibt, die keine Torwarte sind. Standardkonforme Sprachkon-
+strukte, die eine Beschränkung der Ausgabe bewirken, sind erlaubt.
+
+f) Schreiben Sie eine SQL-Anweisung, die für jede Mannschaft die Spieler ermittelt, die am
+meisten verdienen. Geben Sie die Vor- und Nachnamen der Spieler sowie die Bezeichnung
+der jeweiligen Mannschaft aus.
+
+Aufgabe 5 (Relationale Algebra) | (10 PUNKTE]
+
+Formulieren Sie basierend auf den in der Aufgabe 4 gegebenen Relationen die geforderten Anfragen
+in der relationen Algebra.
+
+a) Formulieren Sie eine Anfrage, welche die Vor- und Nachnamen der Spieler ausgibt, die in
+einer Mannschaft aus Erlangen spielen.
+
+b) Formulieren Sie eine Anfrage, welche die Vor- und Nachnamen der Spieler ausgibt, die keine
+Mannschaft haben.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 14
+
+Aufgabe 6 (Normalformen) [8 PUNKTE]
+
+Gegeben ist die Relation
+
+Prüfungen (Matrikelnummer, Fach, StudName, GebDatum, Note)
+
+mit den Schlüsselkandidaten {Matrikelnummer, Fach} und
+{StudName, Fach, GebDatum}. Es gelten außerdem die funktionalen Abhängigkeiten
+
+{MatrNr} — {StudName ,GebDatun}
+{StudName ,GebDatum} — {MatNir}
+
+Alle Attributwerte sind atomar.
+
+Geben Sie die höchste Normalform an, die die Relation Prüfungen erfüllt. Zeigen Sie, dass alle Be-
+dingungen für diese Normalform erfüllt sind und dass mindestens eine Bedingung der nächsthöhe-
+ren Normalform verletzt ist. Beziehen Sie sich bei der Begründung auf die gegebene Relation und
+nennen Sie nicht nur die allgemeinen Definitionen der Normalformen.
+
+Aufgabe 7 (Optimierung) [10 PUNKTE]
+
+a) Erläutern Sie den Unterschied zwischen logischer (= algebraischer) und physischer Optimie-
+rung in zwei bis drei Sätzen.
+
+b) Übertragen Sie folgendes SQL-Statement in einen nicht optimierten algebraischen Ausdruck
+oder einen Anfrage-/Operatorgraph.
+
+1 SELECT Student.Name, Student .Matrikelnummer
+
+2 FROM Student, Pruefungsergebnis
+
+s WHERE Student .Matrikelnummer = Pruefungsergebnis. Student
+« AND Pruefungsergebnis.Note = 1.0;
+
+c) Nennen Sie zwei Möglichkeiten, den algebraischen Ausdruck oder einen Anfrage- /Operator-
+graphen aus der vorhergehenden Teilaufgabe logisch (= algebraisch) zu optimieren. Bezie-
+hen Sie sich auf konkrete Stellen und Operatoren des von Ihnen aufgestellten algebraischen
+Ausdrucks oder Graphen.
+
+ 
+
+Fortsetzung nächste Seite!
+ 
+
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 15
+
+ 
+
+Teilaufgabe II: Softwaretechnologie
+
+ 
+
+Aufgabe 1 (Entwicklungsprozesse) [25 PUNKTE]
+
+a) Nennen Sie zwei Vorgehensmodelle zur strukturierten Durchführung eines Softwareprojekts
+und beschreiben Sie diese kurz. Geben Sie außerdem je Modell sowohl einen Vor- und Nachteil
+an.
+
+b) Nennen Sie drei Qualitätsmerkmale eines Softwareprodukts und beschreiben Sie diese kurz.
+
+c) Nennen Sie einen Vorteil von Reviews und Inspections gegenüber Tests. Geben Sie außerdem
+eine Phase im Softwarelebenszyklus an, in der Reviews und Inspections besser geeignet sind
+als ‘Tests.
+
+d) Nennen Sie die drei wesentlichen Testphasen und die korrespondierenden Entwurfs- bzw.
+Spezifikationsphasen des V-Modells.
+
+e) Geben Sie zwei zentrale Aufgaben des Projektmanagements während der Projektabwicklung
+an.
+
+f) Während der Anforderungsanalyse können die einzelnen Anforderungen in unterschiedliche
+Kategorien eingeteilt werden. Stellen Sie den Unterschied der beiden Anforderungskategorien
+Funktionale Anforderungen und Nichtfunktionale Anforderungen dar.
+
+g) Elementarer Bestandteil eines Sprints in SCRUM ist die Durchführung von Daily Scrums.
+Nennen Sie die drei zentralen Fragen während der täglichen Besprechungen und beschreiben
+Sie deren Zweck mit einem Satz.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 16
+
+Aufgabe 2 (Projektmanagement) | [19 PUNKTE]
+
+Betrachten Sie die folgende Tabelle zum Projektmanagement:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Arbeitspaket | Dauer (Tage) | kann erst beginnen nach..
+
+Al 8
+
+A2 10 Al, A6
+
+A3 5 A6
+
+A4 5 A2, A3
+
+A5 5 AA, A7
+
+A6 10
+
+A7 25
+
+A8 5 A5
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+a) Erstellen Sie ein Gantt-Diagramm, das die in der Tabelle rechte Spalte angegebenen
+Abhängigkeiten berücksichtigt.
+Das Diagramm muss nicht maßstabsgetreu sein, jedoch jede Information aus der gegebenen
+Tabelle enthalten.
+
+b) Wie lange dauert das Projekt mindestens?
+c) Geben Sie alle kritischen Pfade an.
+
+d) Nehmen Sie an, dass jedes Arbeitspaket maximal von einer Person gleichzeitig bearbeitet
+werden kann. Geben Sie an, welche Konsequenzen es hätte, wenn das Projekt von weniger
+als drei Personen bearbeitet wird.
+
+e) Identifizieren Sie, welche Arbeitspakete länger dauern könnten, damit insgesamt alle Ar-
+beitspakete auf kritischen Pfaden liegen. Geben Sie die Anzahl der Puffer-Tage für diese
+Arbeitspakete an.
+
+f) Bewerten Sie folgende Aussage eines Projektmanagers:
+„Wir können das Projekt nicht durchführen, weil alle Arbeitspakete auf einem kritischen
+Pfad liegen.“
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 17
+
+Aufgabe 3 (Use-Case-Diagramm) | [20 PUNKTE|
+
+Im Folgenden ist eine Systembeschreibung für eine „Kontaktdatenerfassung“ angegeben.
+
+ 
+
+Universitäten und viele weitere Organisationen sind verpflichtet, die Kontaktdaten
+und Anwesenheitszeiten ihrer Veranstaltungsgäste zu erfassen und auf Anforderung
+dem Gesundheitsamt zu übermitteln. Um „Zettelwirtschaft“ zu vermeiden, wollen
+wir hierfür eine elektronische Lösung basierend auf einer Webseite zur Verfügung
+stellen, die dieses Problem zentral für viele Einrichtungen löst.
+
+Beim Besuch einer Veranstaltung werden die Gäste auf eine bestimmte Internet-
+adresse hingewiesen. Dort können Sie ohne gesonderte Anmeldung oder Registrie-
+rung den „Check-in“ durchführen, also ihre Kontaktdaten eintragen. Falls dabei un-
+plausible Daten (wie z.B. Name „Hans123“) eingetragen werden, soll eine Fehlermel-
+dung angezeigt werden. Um den Aufwand für Gruppen zu reduzieren, sollen Gäste
+dabei außerdem auch etwaige Begleitpersonen eintragen können. Beim Check-in
+wird eine PIN angezeigt, mit der die Gäste beim Verlassen der Veranstaltung dann
+den „Check-out“ durchführen können. Mit dieser PIN können sich wiederkehrende
+Gäste beim nächsten Besuch außerdem als Alternative zum Standard-Check-in wie-
+der einchecken und sparen sich so die Eingabe der Kontaktdaten. Begleitpersonen
+müssen dabei aber trotzdem neu eingetragen werden.
+
+Der erste Kontakt mit dem System für Inhaber einer Einrichtung ist eine Registrie-
+rung mit Benutzername und Passwort. Danach stellt das System für angemelde-
+te Benutzer eine Reihe von Konfigurationsmöglichkeiten zur Verfügung (z.B. Hin-
+zufügen des eigenen Logos ete.). Während einer Veranstaltung sollen Inhaber für
+Gäste ohne Smartphone den Check-in (ohne PIN) durchführen können. Und nach
+einer Veranstaltung müssen Inhaber alle verbleibenden Gäste austragen können,
+falls diese den Checkout vergessen haben. Und natürlich muss es möglich sein, die
+Kontaktdaten aller Besucher eines Zeitraums für das Gesundheitsamt abzufragen.
+Eine Fehlermeldung soll auch bei jeder Verwendung ungültiger PINs oder Anmel-
+dedaten angezeigt werden. Um den gesetzlichen Anforderungen zu genügen, muss
+es jederzeit für alle möglich sein, die Datenschutzhinweise einzusehen.
+
+ 
+
+ 
+
+ 
+
+a) Erstellen Sie ein Use-Case-Diagramm für das beschriebene System, in dem die Akteure
+und Anwendungsfälle inkl. möglicher Generalisierungen und Beziehungen eingetragen sind.
+Achten Sie auf mögliche ((includes))- und ((extends))- Beziehungen und Bedingungen für
+Anwendungsfälle.
+
+b) Identifizieren Sie außer den modellierten Akteure zwei weitere Stakeholder und geben Sie
+je eine mögliche Anforderung des Stakeholders an und für welchen Anwendungsfall diese
+relevant ist.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 18
+
+Aufgabe 4 (Objektorientierte Analyse) | (15 PUNKTE|
+
+Betrachten Sie das folgende Szenario:
+
+ 
+
+Eine Plattform ftir Online-Bestellung ist an mehrere Unternehmen angebunden.
+Bestellvorgang: Die Nutzer des Systems können zuerst aus einer Liste von lokalen
+Unternehmen auswählen. Ist das Unternehmen ein Restaurant, können die Nutzer
+Speisen auswählen. Nach der Auswahl von Speisen können die Nutzer zusätzlich als
+Option einen gewünschten Liefertermin auswählen. Ist das Unternehmen ein Ein-
+zelhandel, können die Nutzer aus einer Liste von Artikeln auswählen. Die Auswahl
+eines Liefertermins bzw. eines Artikels beendet den Bestellvorgang.
+Kommunikation: Wenn ein Nutzer einen Artikel auswählt, fragt die Plattform
+die Verfügbarkeit beim jeweiligen Unternehmen an. Erst wenn das Unternehmen
+bestätigt, dass der ausgewählte Artikel vorrätig ist, wird er der Bestellung des Nut-
+zers hinzugefügt. Währenddessen kann der Nutzer aber weitere Artikel auswählen.
+Wenn der Nutzer die Bestellung absendet, sendet die Plattform die Bestellung an
+das Unternehmen weiter und der Nutzer erhält danach direkt eine Bestätigung.
+
+ 
+
+ 
+
+ 
+
+(a) Geben Sie fünf geeignete Klassen für das obige Szenario an. Nennen Sie dabei keine Klassen,
+welche durch Basisdatentypen wie Integer oder String abgedeckt werden können.
+
+(b) Erstellen Sie ein Aktivitätsdiagramm für den oben beschriebenen „Bestellvorgang“ (aus Sicht
+der Nutzer). Der Vorgang „Kommunikation“ muss dabei nicht berücksichtigt werden.
+
+(c) Beachten Sie folgenden Anwendungsfall:
+Ein Nutzer wählt einen Hut aus. Der Artikel ist vorrätig und der Nutzer sendet seine Be-
+stellung ab. Das Diagramm soll mindestens je einen Akteur für Nutzer (Browser), Plattform
+(Webserver) und Unternehmen (Kleidungsladen) vorsehen. |
+
+Erstellen Sie ein Sequenzdiagramm für den Vorgang „Kommunikation“ für das gegebene
+System. Beginnen Sie mit dem Anklicken des Artikels „Hut“ durch den Benutzer.
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 19
+
+Aufgabe 5 (Design-Pattern) [15 PUNKTE]
+
+(a) Nennen und erläutern Sie kurz zwei Vorteile von Design-Pattern im Allgemeinen.
+
+(b) Erklären Sie zu jeder Komponente des „Model-View-Controller“-Architekturmusters die zu-
+srundeliegende Aufgabe.
+
+(c) Benennen Sie die zentrale Problemstellung und zwei der damit einhergehenden Probleme,
+die durch den Einsatz des „Model-View-Controller“-Patterns vermieden werden sollen.
+
+(d) Zeigen Sie mittels einer Skizze den Zusammenhang zwischen den verschiedenen Kompo-
+nenten des „Model-View-Controller“-Architekturmusters. Geben Sie dabei an, welche In-
+formationen zwischen den Komponenten ausgetauscht werden und in welcher Reihenfolge
+dies erfolgt. Als Startpunkt können Sie hierfür von einer Interaktion des Benutzers mit der
+Benutzeroberfläche ausgehen.
+
+(e) Welches Design-Pattern wird als fundamentaler Bestandteil einer MVC-Architektur einge-
+setzt, um das Modell und die View konsistent zu halten? Wie heißen die beiden zentralen
+Komponenten dieses Patterns?
+
+Fortsetzung nächste Seite!
+
+ 
+ 
+
+10
+
+it
+
+12
+
+Herbst 2021 Einzelprüfungsnummer: 66116 Seite: 20
+
+ 
+
+Aufgabe 6 (Softwarequalitätssicherung) [26 PUNKTE]
+
+Gegeben sei folgende Methode (in Java), welche den Index des größten Elements im Array zurück-
+gibt:
+
+public int max(int[] arr) {
+int left = 0;
+int right = arr.length - 1;
+while (left < right) {
+if (arr[left] < arrfright]) {
+leftt++;
+} else if (arr[left] > arr[right]) {f
+right--;
+Fr
+}
+return right;
+
+}
+
+(a) Zeichnen Sie einen Kontrollflussgraphen obiger Methode. Beschriften Sie dabei die Knoten
+mit den Zeilennummern des Programmcodes.
+
+(b) Geben Sie maximal drei Testfälle für die gegebene Methode an, um vollständige Anwei-
+sungsüberdeckung zu erreichen.
+
+(c) Welche Testfälle sind notwendig, um die Testfälle der bisherigen Anweisungsüberdeckung
+so zu erweitern, dass eine 100 %-ige Zweigüberdeckung erfüllt ist? Begründen Sie Ihre Ent-
+scheidung.
+
+(d) Beschreiben Sie zwei allgemeine Vorteile von Zweigüberdeckung gegenüber der Anwei-
+sungsüberdeckung.
+
+(e) Beschreiben Sie kurz den Ansatz des Test-Driven-Developments und nennen Sie zwei Vorteile
+davon.
+
+(f} Nennen Sie zwei Vorteile von Unit-Tests und erläutern Sie kurz, welchen Einfluss diese
+Vorteile auf die Wartung eines größeren Softwaresystems haben.
+
+(g) Definieren Sie kurz den Begriff „Verifikation“ im Rahmen der Softwareentwicklung und geben
+Sie eine Möglichkeit an, wie diese umgesetzt werden kann.
+
+ 

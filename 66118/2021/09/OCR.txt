@@ -1,0 +1,335 @@
+ 
+
+ 
+
+Prüfungsteilnehmer Prüfungstermin Einzelprüfungsnummer
+
+Kennzahl:
+
+Kennwort:
+
+  
+
+Arbeitsplatz-Nr.:
+
+ 
+
+Erste Staatsprüfung für ein Lehramt an öffentlichen Schulen
+
+— Prüfungsaufgaben —
+
+ 
+
+Fach: Informatik (vertieft studiert)
+Einzelprüfung: Fachdidaktik
+
+Anzahl der gestellten Themen (Aufgaben): 3
+Anzahl der Druckseiten dieser Vorlage: 7
+
+ 
+
+Bitte wenden!
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer 66118 Seite 2
+
+Thema Nr. 1
+
+Stichworte: Datenmodellierung und Datenbanksysteme, Redundanz, Anomalien, Unterrichtsplanung,
+Abfragen über verknüpfte Tabellen
+
+Der LehrplanPLUS legt für das Fach Informatik in der 10. Jahrgangsstufe unter anderem folgende Kom-
+petenzen und Inhalte fest:
+
+ 
+
+Inf10 Lernbereich 1: Datenmodellierung und relationale Datenbanksysteme (ca. 17 Std.)
+
+Kompetenzerwartungen
+
+Die Schülerinnen und Schüler ...
+
+e analysieren und strukturieren mithilfe objektorientierter Konzepte Datenbestände geeigneter
+Beispiele aus der Praxis (z.B. Bibliotheksverwaltung) und stellen das daraus entwickelte
+Datenmodell als Klassendiagramm mit mehreren Klassen dar.
+
+e überführen objektorientierte Datenmodelle in entsprechende relationale Modelle und setzen
+diese in einem Datenbanksystem um. |
+
+e konzipieren geeignete SQL-Abfragen, um zielgerichtet Informationen aus einer relationalen
+Datenbank zu gewinnen.
+
+e erkennen Redundanzen und Anomalien in einer relationalen Datenbank und beurteilen die
+dadurch entstehende Problematik im Hinblick auf die Konsistenz des Datenbestands.
+
+® bewerten Chancen und Risiken der automatisierten Analyse verknüpfter Datenbestände, auch
+im Hinblick auf gesellschaftliche Auswirkungen.
+
+Inhalte zu den Kompetenzen:
+
+@
+
+objektorientiertes Datenmodell: Objekt, Klasse, Attribut, Beziehung, Kardinalitat
+
+e relationales Modell: Tabellenschema, Datenbankschema, Primär- und Fremdschlüssel,
+Datentyp
+
+e relationales Datenbanksystem
+
+e Redundanz und Konsistenz von Datenbeständen, Anomalien
+
+e Abfragesprache am Beispiel von SQL: Verknüpfung von Bedingungen; Abfrage über
+verknüpfte Tabellen
+
+e Fachbegriffe: Datenbankschema, Primär- und Fremdschlüssel, Kardinalität, Redundanz,
+
+Konsistenz, Anomalie
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fortsetzung nächste Seite!
+ 
+
+Herbst 2021 Einzelpriifungsnummer 66118 Seite 3
+
+Aufgabe 1: Geeignetes Unterrichtsbeispiel
+
+In der neunten Jahrgangsstufe haben die Schiilerinnen und Schiiler bereits die Grundlagen der
+Datenmodellierung und relationaler Datenbanksysteme kennengelernt. Dabei haben sie auch schon
+objektorientierte Datenmodelle mit einer Klasse erstellt, diese ins relationale Modell überführt und
+schließlich mit einem relationalen Datenbanksystem umgesetzt. Ebenso haben sie bereits
+Primärschlüssel verwendet. Sie planen eine problemorientierte Konzeption des Lernbereichs in der
+10. Jahrgangsstufe. Dabei möchten Sie von einem Datenbestand in einer Tabelle ausgehen, der
+Redundanzen besitzt. So kommen Sie sukzessive über die Themen „Anomalien“, „Konsistenz“,
+„Beziehungen“ hin zu „Abfragen über mehrere Tabellen“.
+
+a) Entwickeln Sie zunächst eine motivierende, für eine 10. Jahrgangsstufe altersgerechte,
+redundanzbehaftete Datenbanktabelle (nicht zur Bibliotheksverwaltung), die sich als
+Ausgangspunkt zur Einführung der neuen Inhalte eignet! Zeichnen Sie dazu die Tabelle mit
+entsprechenden Datensätzen und geben Sie das relationale Datenbankschema an!
+
+b) Erläutern Sie ausgehend vom in a) gewonnenen Datenbestand anhand aussagekräftiger Beispiele
+mindestens zwei unterschiedliche Anomalien auf altersgerechtem Niveau!
+
+c) Erstellen Sie kurze, für einen Hefteintrag geeignete Texte, um die Begriffe Redundanz,
+Inkonsistenz und Anomalien zu erklären! Für Beispiele können Sie so weit möglich auf Ihre
+Ergebnisse aus a) und b) verweisen!
+
+d) Entwickeln Sie eine redundanzfreie Variante Ihres Einführungsbeispiels! Geben Sie dazu in
+jeweils altersgerechter Form das objektorientierte Datenmodell, das Datenbankschema und die
+Tabellen mit den passenden auf a) aufbauenden Einträgen an!
+
+Aufgabe 2: Unterrichtsplanung
+
+Sie entwerfen eine Planung des Lernbereichs „Datenmodellierung und relationale Datenbanksysteme“.
+Unter anderem planen Sie eine Doppeistunde zur Einführung von Abfragen über verknüpfte Tabellen.
+Berücksichtigen Sie dabei auch Ihre Ergebnisse aus Aufgabe 1!
+
+a) Geben Sie zur Grobplanung zunächst für die Doppelstunde ein Grobziel an!
+
+b) Geben Sie drei beobachtbare Feinziele für Ihre Doppelstunde zur Einführung von Abfragen über
+verknüpfte Tabellen an! Gehen Sie insbesondere davon aus, dass Sie bereits den in Aufgabe 1d)
+geschilderten Stand in der Vorstunde erreicht haben!
+
+c) Beschreiben Sie den Unterrichtsverlauf der Doppelstunde (textuelle Form)! Begründen Sie die
+von Ihnen getroffenen Entscheidungen aus fachdidaktischer Sicht! Kennzeichnen Sie die Phasen,
+in denen Sie die Feinziele aus Aufgabe 2b) erreicht haben!
+ 
+
+Herbst 2021 Einzelprüfungsnummer 66118 Seite 4
+
+Thema Nr. 2
+
+Stichworte: Variablenbegriff, Modell, Felder, Felder von Objekten
+
+Zur Vermittlung abstrakter Begriffe und Konzepte werden im Informatikunterricht mitunter Modelle
+verwendet. So auch beim Variablenbegriff.
+
+1. Erläutern Sie zwei übliche Modelle zur Einführung des Variablenbegriffs! Etwaige in diesem
+Rahmen im Unterricht genutzte Gegenstände oder Tafelbilder sollten Sie dabei jeweils
+zeichnerisch darstellen. Gehen Sie jeweils kurz auf die Darstellung der Wertzuweisung ein!
+
+2. Beim Programmieren taucht immer wieder die Situation auf, in der zwei Variablen ihre Werte
+vertauschen sollen. Wählen Sie ein für diese Aufgabe geeignetes Modell aus und erläutern Sie,
+wie Sie den Tausch erklären können! Gehen Sie kurz darauf ein, welche Fehler eine Lehrperson
+bei der Erläuterung des Tauschs machen könnte!
+
+3. Beschreiben Sie nun, wie sich die beiden Modelle zur Einführung von Feldern (engl. Arrays),
+d.h. Strukturen zur Zusammenfassung von Variablen des gleichen Datentyps, mithilfe der beiden
+Modelle darstellen lassen! Welche Vor- bzw. Nachteile haben die beiden Modelle jeweils und
+wovon hängt es ab, welches der beiden Modelle Sie im Unterricht verwenden?
+
+4. Das EIS-Prinzip nach Bruner stellt ein didaktisches Prinzip zur Vermittlung neuer Inhalte im
+Unterricht dar. Erläutern Sie das EIS-Prinzip und wie es bei der Einführung von Feldern in der
+Jahrgangsstufe 10 eingesetzt werden kann! Sollten Sie dazu auf eines Ihrer Modelle
+zurückgreifen wollen, reicht die Erläuterung anhand eines unbegründet ausgewählten, aber
+geeigneten Modells.
+
+In den nachfolgenden Aufgaben soll eine Doppelstunde für eine Klasse der 10. Jahrgangsstufe
+vorbereitet werden. Das Thema der Stunde ist: „Felder zur Speicherung von Objekten“. Die Klasse sei
+als eher leistungsheterogen angenommen, d. h. insbesondere, dass einzelne Schülerinnen und Schüler
+große Probleme haben, dem Unterricht zu folgen. Als Programmiersprache sei JAVA angenommen. Es
+steht Ihnen allerdings frei, eine andere, in der 10. Jahrgangsstufe übliche, Programmiersprache zu
+wählen. Geben Sie ggf. die von Ihnen gewählte Sprache an!
+
+5. Formulieren Sie drei beobachtbare Feinziele für die oben genannte Doppelstunde!
+
+6. Beschreiben Sie nachvollziehbar den Unterrichtsverlauf (textuelle Beschreibung)! Richten Sie
+den Fokus Ihrer Beschreibung auf den Einsatz von Modellen zur Erläuterung der fachlichen
+Zusammenhänge! Geben Sie dazu Tafelbilder bzw, Hefteinträge an und beschreiben oder
+zeichnen Sie im Unterricht genutzte Gegenstände! Gliedern Sie Ihren Text nach
+Unterrichtsphasen!
+
+7. Am Ende der Stunde fragt eine gute Schülerin oder ein guter Schüler, ob sich ein Feld also auch
+zur Speicherung von Objekten verschiedener Klassen nutzen lässt. Wie lautet die fachliche
+Antwort auf diese Frage? Wie können Sie die Antwort alters- und situationsgerecht reduzieren?
+
+5.
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer 66118 Seite 5
+
+Thema Nr. 3
+
+Stichworte: Qualitätsmerkmale guten Unterrichts, praktische Leistungsnachweise, Aufgabenkultur,
+Unterrichtssequenz, Einstiegsaufgabe
+
+Aufgabe 1: Merkmale guten (Informatik-)Unterrichts
+
+Hilbert Meyer legt zehn Merkmale guten Unterrichts fest. Diese beinhalten unter anderem folgende
+Punkte:
+
+e Hoher Anteil echter Lernzeit
+
+e Lernförderliches Klima
+
+e Vorbereitete Umgebung
+
+e Individuelles Fördern
+
+e Intelligentes Üben
+
+e Klare Strukturierung des Unterrichts
+e Methodenvielfalt
+
+Erläutern Sie für drei dieser Merkmale kurz (insgesamt auf ca. einer Seite), welche besondere Rolle
+diese im Informatikunterricht einnehmen!
+
+Aufgabe 2: Praktische Leistungsnachweise
+
+a)
+
+b)
+
+Die Schulordnung fiir die Gymnasien in Bayern (Gymnasialschulordnung; GSO) legt unter anderem
+folgendes fest:
+
+»(2) [...] *Miindliche und schriftliche Leistungsnachweise sollen in allen Vorrückungsfächern
+gefordert werden und sollen sich auch auf grundlegende Ergebnisse und Inhalte des bisherigen
+Kompetenzaufbaus beziehen. "Im Fach Kunst können praktische Leistungen als Ersatz für
+schriftliche und mündliche Leistungsnachweise, in Fach Musik nur als Ersatz für mündliche
+Leistungsnachweise gefordert werden. [...]“
+
+Entscheiden Sie, ob Ihrer Meinung nach praktische Leistungsnachweise (z. B. Programmierarbeit)
+auch im Fach Informatik als Ersatz für schriftliche und mündliche Leistungsnachweise erlaubt sein
+sollten! Führen Sie mindestens zwei fachdidaktische Argumente für Ihren Standpunkt an!
+
+Erläutern Sie eine Möglichkeit zur Bewertung derartiger praktischer Leistungsnachweise im
+Informatikunterricht! Gehen Sie dabei insbesondere auf Bewertungsprobleme und wie Sie diesen
+begegnen könnten!
+
+Fortsetzung nächste Seite!
+ 
+
+Herbst 2021 Einzelprüfungsnummer 66118 Seite 6
+
+Aufgabe 3: Vernetzte Informationsstrukturen
+
+Der neue LehrplanPLUS, in der 7. Jahrgangsstufe gültig seit dem Schuljahr 201920, sieht im Fach
+Natur und Technik den Lernbereich „Vernetzte Informationsstrukturen“ vor:
+
+ 
+
+ 
+
+Kompetenzerwartungen:
+
+Die Schülerinnen und Schüler...
+
+analysieren Strukturen vernetzter Informationen aus ihrem Lebensumfeld (z. B. Lexi-
+koneinträge, Webseiten der Schule) und modellieren entsprechende Hypertextstrukturen
+mithilfe objektorientierter Konzepte.
+
+nutzen effektive Strategien zur Informationsbeschaffung im Internet und bewerten ihre
+Suchergebnisse kritisch hinsichtlich Wahrheitsgehalt und Qualität, indem sie z. B. die Art
+der Informationsquellen (etwa Werbeseiten, Blogeinträge, wissenschaftliche
+Publikationen) berücksichtigen.
+
+nutzen die grundlegenden Funktionen eines geeigneten Werkzeugs (WYSIWYG-Editor)
+zur Erstellung einer Hypertextstruktur; hierbei berücksichtigen sie grundlegende Aspekte
+des Urheberrechts und wenden einfache Zitiernormen (Quellenangaben) an.
+
+beschreiben den prinzipiellen Mechanismus für die Übermittlung elektronischer
+Dokumente unter Verwendung ihres Wissens über Struktur und Funktionsweise des
+Internets.
+
+Inhalte zu den Kompetenzen:
+
+Analyse und Modellierung von Hypertextstrukturen, u. a. mithilfe der Klasse VERWEIS;
+Zieladresse als Attribut eines Verweises |
+Darstellung der Objektstruktur einer Hypertextstruktur: Graph, bestehend aus Knoten und
+Kanten
+
+Struktur und Funktionsweise des Internets: Client, Server, Vermittlungsrechner (Router);
+Dienste (u. a. World Wide Web); einfache Beispiele für die Adressierung im Internet
+(z. B. IP-Adresse, URL)
+
+Informationsquellen im Internet, z. B. Suchmaschinen, Enzyklopädien
+
+Fachbegriffe: Hypertext, Verweis, Graph, Client, Server
+
+ 
+
+a) Der Lehrplan weist ca. acht Unterrichtsstunden für die Einheit „Vernetzte Informationsstrukturen“
+
+aus. Skizzieren Sie eine Unterrichtssequenz aus Einzeistunden, welche die gesamte Einheit abdeckt,
+indem Sie für jede Unterrichtsstunde ein Grobziel formulieren! Beschreiben Sie die Grundidee, von
+
+der Sie sich bei der Entwicklung der Reihenfolge haben leiten lassen (ca. ' Seite)!
+
+Fortsetzung nächste Seite!
+
+ 
+
+ 
+ 
+
+Herbst 2021 Einzelprüfungsnummer 66118 Seite 7
+
+b) Entwickeln Sie eine Aufgabe als Einstieg in die erste Stunde der Sequenz! Berücksichtigen Sie
+dabei vor allem folgende Aspekte:
+
+motivierender Kontext,
+
+kurze Aufgabenstellung (maximal eine halbe Seite),
+Differenzierungsmöglichkeit innerhalb der Aufgabenstellung,
+
+ein Teil der Aufgabe muss praktische Arbeit am Computer beinhalten!
+
+e @ 8
+
+c) Skizzieren Sie auf ca. einer Seite, wie Sie den Unterricht in dieser Stunde (bzw. der Folgestunde)
+im Anschluss an den in Aufgabe 3b) entwickelten Einstieg fortsetzen! Gehen Sie dabei insbesondere
+auf den Lehrplanbezug Ihrer Darstellung ein!
+
+ 
